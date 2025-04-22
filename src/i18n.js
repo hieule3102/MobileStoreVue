@@ -91,7 +91,8 @@ const messages = {
             quant: 'Quantity: ',
             total: 'Total',
             shippingtitle: 'Shipping',
-            shippingtaxes: 'Taxes and shipping fee will be calculated at checkout',
+            shippingtaxes:
+              'Taxes and shipping fee will be calculated at checkout',
             checkout: 'check out',
             viewcart: 'view cart'
           }
@@ -121,7 +122,8 @@ const messages = {
       },
       footer: {
         disc: {
-          disc1: 'Stabraq Trendsetters is an all-Egyptian clothes brand. Driven by self-expression, we strive to reflect our beliefs through high quality, multi-featured products and effective and inspiring movements.',
+          disc1:
+            'Stabraq Trendsetters is an all-Egyptian clothes brand. Driven by self-expression, we strive to reflect our beliefs through high quality, multi-featured products and effective and inspiring movements.',
           dics2: 'Address: 1 Mostafa El-Nahaas, Nasr City',
           dics3: 'Call us at: 01123399345',
           dics4: 'Email: Email'
@@ -187,14 +189,18 @@ const messages = {
         eshippingad: 'Enter shipping address',
         total: 'total',
         shippingpol: 'Shipping policy',
-        shippingp: 'Stabraq is not responsible for return shipping costs. Every shipping has to be paid by the customer, even if the item had free shipping in the first place, the customer has to pay for the shipping in return.',
+        shippingp:
+          'Stabraq is not responsible for return shipping costs. Every shipping has to be paid by the customer, even if the item had free shipping in the first place, the customer has to pay for the shipping in return.',
         yconsent: 'Your Consent',
-        consentp: 'By using our website, registering an account, or making a purchase, you hereby consent to our Return & Refund Policy and agree to its terms.',
+        consentp:
+          'By using our website, registering an account, or making a purchase, you hereby consent to our Return & Refund Policy and agree to its terms.',
         refund: 'Changes To Our Return & Refund Policy',
-        refundp: 'Should we update, amend or make any changes to this document so that they accurately reflect our Service and policies. Unless otherwise required by law, those changes will be prominently posted here. Then, if you continue to use the Service, you will be bound by the updated Return & Refund Policy. If you do not want to agree to this or any updated Return & Refund Policy, you can delete your account.'
+        refundp:
+          'Should we update, amend or make any changes to this document so that they accurately reflect our Service and policies. Unless otherwise required by law, those changes will be prominently posted here. Then, if you continue to use the Service, you will be bound by the updated Return & Refund Policy. If you do not want to agree to this or any updated Return & Refund Policy, you can delete your account.'
       },
       forms: {
-        inputerror: 'Your information is incorrect, please check your input fields',
+        inputerror:
+          'Your information is incorrect, please check your input fields',
         contact: 'Contact',
         haveacc: 'Have an account?',
         login: 'Log in',
@@ -238,7 +244,8 @@ const messages = {
         payment: 'Payment',
         paymentp: 'All transactions are secure and encrypted.',
         cards: 'Pay via (Debit/Credit cards/Wallets/Installments)',
-        cardsp: 'After clicking “Pay now”, you will be redirected to Pay via (Debit/Credit cards/Wallets/Installments) to complete your purchase securely.',
+        cardsp:
+          'After clicking “Pay now”, you will be redirected to Pay via (Debit/Credit cards/Wallets/Installments) to complete your purchase securely.',
         cod: 'Cash on Delivery (COD)',
         billingad: 'Billing address',
         sameas: 'Same as shipping address',
@@ -298,15 +305,18 @@ const messages = {
       add7: '+20222737773',
       sizechart: 'Size Chart',
       chest: 'chest',
-      chestp: 'To measure the chest: First, put the product on a flat surface, then measure between the two ends below armhole.',
+      chestp:
+        'To measure the chest: First, put the product on a flat surface, then measure between the two ends below armhole.',
       length: 'length',
-      lengthp: 'To measure the length of the product: First, put the product on a flat surface, then measure from the highest point of the shoulder down to the products bottom hem.',
+      lengthp:
+        'To measure the length of the product: First, put the product on a flat surface, then measure from the highest point of the shoulder down to the products bottom hem.',
       related: 'Related Products'
     },
     accountRegister: {
       head: 'ACCOUNT',
       newcus: 'NEW CUSTOMER',
-      signupp: 'Register with us for a faster checkout, to track the status of your order and more.',
+      signupp:
+        'Register with us for a faster checkout, to track the status of your order and more.',
       fname: 'First Name',
       fnameerror: 'first name must not be empty',
       lname: 'Last Name',
@@ -318,7 +328,8 @@ const messages = {
       createacc: 'create an account',
       or: 'OR',
       returner: 'RETURNING CUSTOMER',
-      signinp: 'If you already have an account, enter your email and password information.',
+      signinp:
+        'If you already have an account, enter your email and password information.',
       uemail: 'Email Address',
       uemailerror: 'email must be correct',
       upass: 'Password',
@@ -348,13 +359,17 @@ const messages = {
     information: {
       aboutus: {
         head: 'ABOUT US',
-        text1: 'Stabraq Trendsetters is the number one detail oriented all-Egyptian clothes brand.',
-        text2: 'Driven by self-expression, we strive to reflect our beliefs through high quality, multi-featured products and effective and inspiring movements.',
-        text3: 'Check out this video to get an idea of who we are, and how we work.'
+        text1:
+          'Stabraq Trendsetters is the number one detail oriented all-Egyptian clothes brand.',
+        text2:
+          'Driven by self-expression, we strive to reflect our beliefs through high quality, multi-featured products and effective and inspiring movements.',
+        text3:
+          'Check out this video to get an idea of who we are, and how we work.'
       },
       contactus: {
         head: 'DROP US A LINE',
-        haveaq: 'Have a question or comment? Use the form below to send us a message or contact us by mail at:',
+        haveaq:
+          'Have a question or comment? Use the form below to send us a message or contact us by mail at:',
         yname: 'Your Name',
         yphone: 'Your Phone',
         yemail: 'Your Email',
@@ -433,435 +448,270 @@ const messages = {
       }
     }
   },
-  ar: {
+  vi: {
     global: {
       header: {
         logo: 'stabraq',
         nav: {
-          men: 'رجال',
-          women: 'نساء',
-          kids: 'أطفال',
-          accessories: 'اكسسوارات'
+          men: 'Nam',
+          women: 'Nữ',
+          kids: 'Trẻ em',
+          accessories: 'Phụ kiện'
         },
         navList: {
           men: {
-            allmen: 'تسوق جميع منتجات الرجال',
-            alltops: 'تسوق جميع الملابس العلوية',
-            top: 'الملابس العلوية',
-            top1: 'التي-شيرتات',
-            top2: 'جرافكس',
-            top3: 'جرافيتي',
-            top4: 'بولو',
-            top5: 'الفمصان',
-            top6: 'الاكمام الطويلة',
-            top7: 'الهوديات و السويتشيرتات',
-            top8: 'الهودي بسوستة',
-            top9: 'البلوفرات',
-            top10: 'الجاكيتات و المعاطف',
-            allbott: 'تسوق جميع الملابس السفلية',
-            bottom: 'الملابس السفلية',
-            bottom1: 'جينز',
-            bottom2: 'الجوجر',
-            bottom3: 'البنطلونات الرياضية',
-            bottom4: 'الشورتات',
-            alljil: 'تسوق جميع الجلباب',
-            jilbab: 'الجلباب',
-            jilbab1: 'jilbab',
-            allfeat: 'تسوق كل ما وصل حديثا',
-            featured: 'ما نوصي به',
-            shopallmen: 'تسوق جميع منتجات الرجال',
-            allaccess: 'تسوق جميع الإكسسوارات',
-            accessories: 'الإكسسوارات',
-            accessories1: 'الشرابات',
-            accessories2: 'محفطة',
-            accessories3: 'نوت بوك',
-            accessories4: 'كروت الهدايا',
-            newarr: 'وصل حديثا'
+            allmen: 'TẤT CẢ NAM',
+            alltops: 'Tất cả áo',
+            top: 'ÁO',
+            top1: 'ÁO THUN',
+            top2: 'Họa tiết',
+            top3: 'Áo đồ họa',
+            top4: 'Polo',
+            top5: 'Áo sơ mi',
+            top6: 'Áo dài tay',
+            top7: 'Áo hoodie',
+            top8: 'Áo khoác kéo',
+            top9: 'Áo pullover',
+            top10: 'Áo khoác & Áo mưa',
+            allbott: 'Tất cả quần',
+            bottom: 'QUẦN',
+            bottom1: 'Jeans',
+            bottom2: 'Jogger',
+            bottom3: 'Quần thể thao',
+            bottom4: 'Quần đùi',
+            alljil: 'Tất cả jilbab',
+            jilbab: 'JILBAB',
+            jilbab1: 'Jilbab',
+            allfeat: 'Tất cả nổi bật',
+            featured: 'NỔI BẬT',
+            shopallmen: 'MUA TẤT CẢ NAM',
+            allaccess: 'Tất cả phụ kiện',
+            accessories: 'PHỤ KIỆN',
+            accessories1: 'Tất tất',
+            accessories2: 'Ví',
+            accessories3: 'Sổ tay',
+            accessories4: 'Thẻ quà tặng',
+            newarr: 'Sản phẩm mới'
           },
           women: {
-            allwomen: 'تسوقي جميع منتجات النساء',
-            alltops: 'تسوقي جميع الملابس العلوية',
-            top: 'الملابس العلوية',
-            top1: 'بيسك',
-            top2: 'جرافيكس',
-            top3: 'الهودي بسوستة',
-            top4: 'البلوفرات',
-            top5: 'السويت-شيرتات',
-            bottom: 'الملابس السفلية',
-            allbottoms: 'تسوقي جميع الملابس السفلية',
-            bottom1: 'جيبة',
-            dress: 'فساتين',
-            alldress: 'تسوقي جميع الفساتين',
-            dress1: 'فستان',
-            accessories: 'الإكسسوارات',
-            allaccesswomen: 'تسوقي جميع الإكسسوارات',
-            accessories1: 'الشرابات',
-            accessories2: 'طرحة',
-            accessories3: 'نوت بوك',
-            accessories4: 'كروت الهدايا',
-            featured: 'ما نوصي به',
-            allfeatured: 'تسوقي كل ما وصل حديثا',
-            featured1: 'وصل حديثا',
-            shopallwomen: 'تسوقي جميع منتجات النساء'
+            allwomen: 'Tất cả nữ',
+            alltops: 'Tất cả áo',
+            top: 'ÁO',
+            top1: 'Cơ bản',
+            top2: 'Họa tiết',
+            top3: 'Áo kéo',
+            top4: 'Áo pullover',
+            top5: 'Áo nỉ',
+            bottom: 'QUẦN',
+            allbottoms: 'Tất cả quần',
+            bottom1: 'Váy',
+            dress: 'VÁY & JUMPSUIT',
+            alldress: 'Tất cả váy & jumpsuit',
+            dress1: 'Váy',
+            accessories: 'PHỤ KIỆN',
+            allaccesswomen: 'Tất cả phụ kiện nữ',
+            accessories1: 'Tất tất',
+            accessories2: 'Khăn quàng',
+            accessories3: 'Sổ tay',
+            accessories4: 'Thẻ quà tặng',
+            featured: 'NỔI BẬT',
+            allfeatured: 'Tất cả nổi bật',
+            featured1: 'Sản phẩm mới',
+            shopallwomen: 'MUA TẤT CẢ NỮ'
           },
           kids: {
-            allkids: 'تسوق جميع منتجات الاطفال',
-            top1: 'البنطلونات',
-            top2: 'جرافكس',
-            top3: 'الهودي بسوستة'
+            allkids: 'Tất cả trẻ em',
+            top1: 'Quần',
+            top2: 'Họa tiết',
+            top3: 'Áo kéo'
           }
         },
         cart: {
           emptyCart: {
-            btn: 'CLOSE',
-            header: 'السلة',
-            pEmpty: 'سلة التسوق فارغة حاليا',
-            continueBtn: 'تابع التسوق'
+            btn: 'ĐÓNG',
+            header: 'GIỎ HÀNG CỦA BẠN',
+            pEmpty: 'Giỏ hàng của bạn hiện tại trống.',
+            continueBtn: 'TIẾP TỤC MUA SẮM'
           },
           fullCart: {
-            items: 'المنتجات',
-            quant: 'الكمية: ',
-            total: 'المجموع',
-            shippingtitle: 'الشحن',
-            shippingtaxes: 'سيتم احتساب رسوم الشحن عندالدفع',
-            checkout: 'الدفع',
-            viewcart: 'عرض السلة'
+            items: 'sản phẩm',
+            quant: 'Số lượng: ',
+            total: 'Tổng cộng',
+            shippingtitle: 'Vận chuyển',
+            shippingtaxes: 'Thuế và phí vận chuyển sẽ được tính khi thanh toán',
+            checkout: 'thanh toán',
+            viewcart: 'xem giỏ hàng'
           }
         },
         profile: {
           login: {
-            header: 'تسجيل الدخول :',
-            eInput: 'البريد الالكتروني',
-            evalid: 'البريد الالكتروني يجب ان يكون صحيحا',
-            pInput: 'كلمة السر',
-            pvalid: 'كلمة السر يجب ان لا تكون فارغة اول اقل من 8 ارقام',
-            loginInput: 'تسجيل الدخول',
-            forgotP: 'نسيت كلمة السر؟',
-            createBtn: 'انشاء حساب'
+            header: 'ĐĂNG NHẬP KHÁCH HÀNG:',
+            eInput: 'Địa chỉ email',
+            evalid: 'email phải chính xác',
+            pInput: 'Mật khẩu',
+            pvalid: 'mật khẩu không được rỗng hoặc ít hơn 8 ký tự',
+            loginInput: 'ĐĂNG NHẬP',
+            forgotP: 'Quên mật khẩu?',
+            createBtn: 'TẠO TÀI KHOẢN'
           },
           logout: {
-            myacc: 'حسابي',
-            logoutBtn: 'تسجيل الخروج'
+            myacc: 'TÀI KHOẢN CỦA TÔI',
+            logoutBtn: 'ĐĂNG XUẤT'
           }
         },
-        mywishlist: 'قائمة امنياتي',
-        lang: 'اللغة',
+        mywishlist: 'DANH SÁCH ƯA THÍCH CỦA TÔI',
+        lang: 'Ngôn ngữ',
         placeholders: {
-          email: 'البريد الالكتروني',
-          pass: 'كلمة السر'
+          email: 'Địa chỉ email',
+          pass: 'Mật khẩu'
         }
       },
       footer: {
         disc: {
-          disc1: 'إستبرق اول براند مصري قائم على تعزيز الهوية العربية والإسلامية من خلال أعلى جودة وأدق اهتمام بالتفاصيل.',
-          dics2: 'العنوان: ١ مصطفى النحاس، مدينة نصر',
-          dics3: 'اتصل بنا: 01123399345',
-          dics4: 'الايميل: Email'
+          disc1:
+            'Stabraq Trendsetters là thương hiệu thời trang toàn Ai Cập. Với tôn chỉ tự thể hiện, chúng tôi phấn đấu phản ánh những giá trị của mình qua các sản phẩm chất lượng cao, tính năng đa dạng và những phong trào hiệu quả, truyền cảm hứng.',
+          dics2: 'Địa chỉ: 1 Mostafa El-Nahaas, Nasr City',
+          dics3: 'Gọi chúng tôi qua: 01123399345',
+          dics4: 'Email: Email'
         },
-        shop: 'تسوق',
-        info: 'معلومات',
-        info1: 'معلومات عنا',
-        info2: 'اتصل بنا',
-        info3: 'Terms Of Service',
-        info4: 'سياسة الاسترجاع',
-        payment: 'نقبل الدفع بـــ',
-        rights: ' 2021 إستبرق جميع الحقوق محفوظة.'
+        shop: 'MUA SẮM',
+        info: 'THÔNG TIN',
+        info1: 'Về chúng tôi',
+        info2: 'Liên hệ với chúng tôi',
+        info3: 'Điều khoản dịch vụ',
+        info4: 'Chính sách hoàn tiền',
+        payment: 'PHƯƠNG THỨC THANH TOÁN',
+        rights: '2021 Stabraq TS Management Co. Bản quyền đã được bảo lưu'
       }
     },
     homePage: {
       lookingfor: {
-        title: 'تشكيلات إستبرق',
-        tshirts: 'تي-شيرت',
-        pants: 'بنطلونات',
-        women: 'بناتي',
-        kids: 'أطفالي',
-        bags: 'حقائب',
-        accessories: 'اكسسوارات'
+        title: 'Tôi đang tìm...',
+        tshirts: 'ÁO THUN',
+        pants: 'QUẦN',
+        women: 'PHỤ NỮ',
+        kids: 'TRẺ EM',
+        bags: 'TÚI XÁCH',
+        accessories: 'PHỤ KIỆN'
       },
       newitems: {
-        head: 'منتجات جديدة لا يمكنك تفويتها',
-        p: 'GRAPHICS COLLECTION'
+        head: 'Sản phẩm mới bạn không thể bỏ qua',
+        p: 'BỘ SƯU TẬP ĐỒ HỌA'
       },
       trending: {
-        head: 'الرائج الآن',
-        sec1: 'تي-شيرت',
-        sec2: 'بنطلونات',
-        sec3: 'الاكسسوارات'
+        head: 'Xu hướng',
+        sec1: 'ÁO THUN',
+        sec2: 'QUẦN',
+        sec3: 'PHỤ KIỆN'
       },
       furturetrend: {
-        head: 'Furture Trendsetters',
-        p: 'تسوق الان'
+        head: 'Những người dẫn đầu xu hướng tương lai',
+        p: 'MUA TẤT CẢ'
       }
     },
     collectionPage: {
       sort: {
-        head: 'ترتيب حسب',
-        sort1: 'متميز',
-        sort2: 'السعر, من الارخص الي الاعلي',
-        sort3: 'السعر, من الاعلي الي الارخص',
-        sort4: 'التاريخ من القديم الي الجديد',
-        sort5: 'التاريخ من الجديد الي القديم',
-        sort6: 'افضل المبيعات',
-        sort7: 'ابجديات, a-z',
-        sort8: 'ابجديات, z-a'
+        head: 'Sắp xếp theo',
+        sort1: 'Nổi bật',
+        sort2: 'Giá, từ thấp đến cao',
+        sort3: 'Giá, từ cao đến thấp',
+        sort4: 'Ngày, cũ đến mới',
+        sort5: 'Ngày, mới đến cũ',
+        sort6: 'Bán chạy',
+        sort7: 'Theo thứ tự chữ cái, A-Z',
+        sort8: 'Theo thứ tự chữ cái, Z-A'
       },
-      viewas: 'العرض مثل'
+      viewas: 'Xem như'
     },
     checkoutPage: {
-      show: 'اظهار',
-      hide: 'اخفاء',
-      ordersum: 'ملخص الطلب',
+      show: 'Hiển thị',
+      hide: 'Ẩn',
+      ordersum: 'Tóm tắt đơn hàng',
       product: {
-        giftcard: 'بطاقة الهدية',
-        apply: 'تطبيق',
-        subtotal: 'المجموع الفرعي',
-        shipping: 'الشحن',
-        eshippingad: 'ادخل طريقة الشحن',
-        total: 'المجموع',
-        shippingpol: 'Shipping policy',
-        shippingp: 'Stabraq is not responsible for return shipping costs. Every shipping has to be paid by the customer, even if the item had free shipping in the first place, the customer has to pay for the shipping in return.',
-        yconsent: 'Your Consent',
-        consentp: 'By using our website, registering an account, or making a purchase, you hereby consent to our Return & Refund Policy and agree to its terms.',
-        refund: 'Changes To Our Return & Refund Policy',
-        refundp: 'Should we update, amend or make any changes to this document so that they accurately reflect our Service and policies. Unless otherwise required by law, those changes will be prominently posted here. Then, if you continue to use the Service, you will be bound by the updated Return & Refund Policy. If you do not want to agree to this or any updated Return & Refund Policy, you can delete your account.'
+        giftcard: 'Thẻ quà tặng',
+        apply: 'Áp dụng',
+        subtotal: 'Tổng phụ',
+        shipping: 'Vận chuyển',
+        eshippingad: 'Nhập địa chỉ giao hàng',
+        total: 'Tổng cộng',
+        shippingpol: 'Chính sách vận chuyển',
+        shippingp:
+          'Stabraq không chịu trách nhiệm chi phí vận chuyển trả lại. Mọi chi phí vận chuyển phải được khách hàng thanh toán, ngay cả khi sản phẩm ban đầu có miễn phí vận chuyển, khách hàng vẫn phải trả phí vận chuyển khi trả hàng.',
+        yconsent: 'Sự đồng ý của bạn',
+        consentp:
+          'Bằng cách sử dụng website của chúng tôi, đăng ký tài khoản hoặc mua hàng, bạn đồng ý với Chính sách Hoàn trả & Hoàn tiền của chúng tôi và các điều khoản của nó.',
+        refund: 'Thay đổi chính sách hoàn tiền',
+        refundp:
+          'Nếu chúng tôi cập nhật, sửa đổi hoặc thay đổi tài liệu này để phản ánh chính xác dịch vụ và chính sách của chúng tôi. Trừ khi pháp luật yêu cầu khác, những thay đổi này sẽ được đăng tải rõ ràng ở đây. Nếu bạn tiếp tục sử dụng dịch vụ, bạn sẽ bị ràng buộc bởi chính sách hoàn tiền đã cập nhật.'
       },
       forms: {
-        inputerror: 'المعلومات غير صحيحة من فضلك تفقد المعلومات مجددا',
-        contact: 'معلومات المستخدم',
-        haveacc: 'لديك حساب?',
-        login: 'تسجيل الدخول',
-        email: 'البريد الالكتروني',
-        emerror1: 'الايميل يجب ان يكون صحيحا',
-        emerror2: 'الايميل يجب ان لا يكون فارغا',
-        emerror3: 'الايميل يجب ان لايكون فارغا وصحيحا',
-        delivery: 'الشحن',
-        ship: 'Ship',
-        pickup: 'Pick up',
-        countregion: 'البلد',
-        countregionerror: 'حقل البلد لا يجب ان يكون فارغا',
-        fname: 'الاسم الاول',
-        fnameerror: 'الاسم الاول يجب ان لا يكون فارغا',
-        lname: 'اسم العائلة',
-        lnameerror: 'اسم العائلة لا يجب ان يكون فارغا',
-        address: 'العنوان',
-        addresserror: 'حقل العنوان يجب ان لا يكون فارغا',
-        city: 'المدينة',
-        cityerror: 'حقل المدينة يجب ان لا يكون فارغا',
-        govern: 'المحافطة',
-        governerror: 'حقل المحافظة يجب ان لا يكون فارغا',
-        postal: 'Postal code',
-        postalerror: 'Postal code must not be empty',
-        phone: 'الهاتف',
-        phoneoptional: 'الهاتف(اختياري)',
-        phonemass1: 'في حال احتجنا',
-        phonemass2: 'للتواصل معك عن الطلب',
-        phoneerror: 'الهاتف لا يجب ان يكون فارغا',
-        savefornext: 'الاحتفاظ بالمعولمات للمرة القادمة',
-        textme: 'راسلني بالعروض الجديدة',
-        shippingmeth: 'طرق الشحن',
-        aramex: 'Aramex Office',
-        doorshipp: 'Doorstep shipping',
-        pickuplock: 'Pickup locations',
-        pickupp: 'There is 1 store with stock close to your location',
-        onlinestore: 'Online Store',
-        onlinestorep: '1 Mostafa El-Nahaas, 1st Floor, C, Nasr City',
-        info: 'Free',
-        infop: 'Usually ready in 24 hours',
-        payment: 'الدفع',
-        paymentp: 'All transactions are secure and encrypted.',
-        cards: 'Pay via (Debit/Credit cards/Wallets/Installments)',
-        cardsp: 'After clicking “Pay now”, you will be redirected to Pay via (Debit/Credit cards/Wallets/Installments) to complete your purchase securely.',
-        cod: 'Cash on Delivery (COD)',
-        billingad: 'Billing address',
-        sameas: 'Same as shipping address',
-        usediff: 'Use a different billing address',
+        inputerror:
+          'Thông tin của bạn không chính xác, vui lòng kiểm tra lại các trường nhập liệu',
+        contact: 'Liên hệ',
+        haveacc: 'Có tài khoản?',
+        login: 'Đăng nhập',
+        email: 'Email',
+        emerror1: 'Trường email phải chính xác',
+        emerror2: 'Trường email không được để trống',
+        emerror3: 'Trường email không được để trống hoặc sai',
+        delivery: 'Giao hàng',
+        ship: 'Giao hàng tận nhà',
+        pickup: 'Nhận tại cửa hàng',
+        countregion: 'Quốc gia/Khu vực',
+        countregionerror: 'Trường quốc gia không được để trống',
+        fname: 'Tên',
+        fnameerror: 'Tên không được để trống',
+        lname: 'Họ',
+        lnameerror: 'Họ không được để trống',
+        address: 'Địa chỉ',
+        addresserror: 'Địa chỉ không được để trống',
+        city: 'Thành phố',
+        cityerror: 'Trường thành phố không được để trống',
+        govern: 'Tỉnh/Thành phố',
+        governerror: 'Trường tỉnh/thành phố không được để trống',
+        postal: 'Mã bưu điện',
+        postalerror: 'Mã bưu điện không được để trống',
+        phone: 'Số điện thoại',
+        phoneoptional: 'Điện thoại (tùy chọn)',
+        phonemass1: 'Trong trường hợp chúng tôi cần',
+        phonemass2: 'liên hệ với bạn về đơn hàng',
+        phoneerror: 'Số điện thoại không được để trống',
+        savefornext: 'Lưu thông tin này cho lần sau',
+        textme: 'Gửi tin nhắn cho tôi về tin tức và ưu đãi',
+        shippingmeth: 'Phương thức vận chuyển',
+        aramex: 'Văn phòng Aramex',
+        doorshipp: 'Giao hàng tận nhà',
+        pickuplock: 'Điểm nhận hàng',
+        pickupp: 'Có 1 cửa hàng có hàng gần vị trí của bạn',
+        onlinestore: 'Cửa hàng trực tuyến',
+        onlinestorep: '1 Mostafa El-Nahaas, Tầng 1, C, Nasr City',
+        info: 'Miễn phí',
+        infop: 'Thường sẵn sàng trong 24 giờ',
+        payment: 'Thanh toán',
+        paymentp: 'Tất cả giao dịch đều được bảo mật và mã hóa.',
+        cards: 'Thanh toán qua (Thẻ ghi nợ/Thẻ tín dụng/Ví/Trả góp)',
+        cardsp:
+          'Sau khi nhấp vào “Thanh toán ngay”, bạn sẽ được chuyển hướng để hoàn thành thanh toán qua (Thẻ ghi nợ/Thẻ tín dụng/Ví/Trả góp) một cách bảo mật.',
+        cod: 'Thanh toán khi nhận hàng (COD)',
+        billingad: 'Địa chỉ thanh toán',
+        sameas: 'Giống với địa chỉ giao hàng',
+        usediff: 'Sử dụng địa chỉ thanh toán khác',
         footer: {
-          refund: 'سياسة الاسترجاع',
-          prpol: 'سياسة الخصوصية',
-          terms: 'Terms of service',
-          contact: 'معلومات عنا'
+          refund: 'Chính sách hoàn tiền',
+          prpol: 'Chính sách bảo mật',
+          terms: 'Điều khoản dịch vụ',
+          contact: 'Thông tin liên hệ'
         }
       },
       placeholders: {
-        email: 'البريد الالكتروني',
-        fname: 'الاسم الاول',
-        lname: 'اسم العائلة',
-        address: 'العنوان',
-        city: 'المدينة',
-        postalc: 'Postal code',
-        phone: 'الهاتف',
-        phoneoptional: 'الهاتف(اختياري)'
-      }
-    },
-    cartPage: {
-      head: 'سلة التسوق',
-      emptycart: '.سلة التسوق فارغة حاليا',
-      continuebrows: 'تابع التسوق',
-      here: 'هنا',
-      prod: 'المنتج',
-      info: 'معلومات',
-      price: 'السعر:',
-      quan: 'الكمية:',
-      total: 'المجموع:',
-      ordersum: 'ملخص الطلب',
-      addcom: 'تعليقات اضافية',
-      proceed: 'الذهاب للدفع',
-      contshopping: 'تابع التسوق',
-      related: 'منتجات مشابهة',
-      commentplaceh: 'تعليقات اضافية للبائع'
-    },
-    cardInfoPage: {
-      colors: 'اللون:',
-      size: 'المقاس:',
-      addtcard: 'أضف الي السلة',
-      buytnow: 'اشتري الان',
-      pickupp1: 'PICKUP AVAILABLE AT',
-      pickupp2: 'ONLINE STORE',
-      pickupp3: 'Usually ready in 24 hours',
-      viewinfo: 'view store info',
-      onlines: 'online store',
-      pickupp: 'Pickup available, usually ready in 24 hours',
-      add1: '1 Mostafa El-Nahaas',
-      add2: '1st Floor',
-      add3: 'C',
-      add4: 'Nasr City',
-      add5: '4441525',
-      add6: 'Egypt',
-      add7: '+20222737773',
-      sizechart: 'جدول المقاسات',
-      chest: 'الصدر',
-      chestp: 'لقياس عرض الصدر: أولًا قم بفرد المنتج علي سطح مستقيم، ثم ابدأ بقياس المسافة بين طرفي أسفل الإبط مرورًا بمنطقة الصدر (من الجزء الأمامي فقط).',
-      length: 'الطول',
-      lengthp: 'لقياس طول المنتج: أولًا قم بفرد المنتج على سطح مستقيم، ثم ابدأ بالقياس طولًا بدايةً من أعلى نقطة في الكتف ونزولًا إلى أسفل نقطة في ديل المنتج.',
-      related: 'منتجات مشابهة'
-    },
-    accountRegister: {
-      head: 'فتح حساب',
-      newcus: 'عميل جديد',
-      signupp: 'سجل معنا لتتبع طلباتك وللتسوق اسرع واكثر...',
-      fname: 'الاسم الأول',
-      fnameerror: 'الاسم الأول لايمكن تركه فارغا',
-      lname: ' اسم العائلة',
-      lnameerror: 'اسم العائلة لا يمكن تركه فارغا',
-      emailadd: 'البريد الإلكتروني ',
-      enailadderror: 'البريد الإلكتروني  يجب ان يكون صحيحا',
-      pass: 'كلمة السر',
-      passerror: 'كلمة السر يجب ان تكون صحيحة وليست اقل من 8 احرف',
-      createacc: 'انشاء حساب',
-      or: 'او',
-      returner: 'عميل سابق',
-      signinp: 'لو كان لديك حساب مسبقا, ادخل البريد الإلكتروني و كلمة السر',
-      uemail: 'البريد الإلكتروني',
-      uemailerror: 'البريد الإلكتروني يجب ان يكون صحيح',
-      upass: 'كلمة السر',
-      upasserror: 'كلمة السر يجب ان تكون صحيحة وليست اقل من 8 احرف',
-      login: 'تسجيل الدخول',
-      placeholders: {
-        fname: 'الاسم الاول',
-        lname: 'اسم العائلة',
-        yemail: 'بريدك الالكتروني',
-        ypass: 'كلمة السر الخاصة بك',
-        emailadd: 'البريد الالكتروني',
-        passadd: 'كلمة السر'
-      }
-    },
-    accountPage: {
-      head: 'حسابي',
-      orderhis: 'تاريخ الطلبات',
-      order: 'الطلب',
-      date: 'التاريخ',
-      paymentstat: 'حالة الدفع',
-      fulfillment: 'حالة تجهيز الطلب',
-      total: 'المجموع',
-      emptyhistory: 'تاريخ الطلب لديك فارغ.',
-      contbrowsing: 'تابع التسوق',
-      here: 'هنا'
-    },
-    information: {
-      aboutus: {
-        head: 'عن إستبرق',
-        text1: 'إستبرق اول براند مصري قائم على تعزيز الهوية العربية والإسلامية من خلال أعلى جودة وأدق اهتمام بالتفاصيل.',
-        text2: 'نسعى جاهدين لعكس معتقداتنا من خلال منتجات عالية الجودة ومتعددة الميزات وحركات فعالة وملهمة.',
-        text3: 'اتفرج على الفيديو ده علشان تاخد فكرة عن احنا مين وبنشتغل ازاي'
-      },
-      contactus: {
-        head: 'شاركونا أرائكم',
-        haveaq: 'نحن نرحب بكم في متجرنا في أي وقت. إذا كنت بحاجة إلى مساعدة أو لديك أي أسئلة، يرجى الاتصال بنا عن طريق ملء المعلومات التالية، إذا كان الأمر عاجلا',
-        yname: 'الاسم',
-        yphone: 'الهاتف',
-        yemail: 'البريد الالكتروني',
-        ycomment: 'تعليق',
-        submit: 'ارسال جهة الاتصال',
-        storeinfo: 'معلومات المتجر',
-        storeinfop1: 'نحب ان نسمع اقتراحاتك',
-        storeinfop2: 'ارسل لنا ارائك واقتراحاتك',
-        storeinfop3: 'أو ببساطة يمكنك الاستمتاع بفنجان من الشاي الطازج  ',
-        storeinfop4: 'والبسكويت معنا',
-        storeinfop5: 'Address: 1 Mostafa El-Nahaas, Nasr City,',
-        storeinfop6: 'Cairo',
-        storeinfop7: 'Email: EMAIL',
-        storeinfop8: 'Mobile: 002-01123399345',
-        storeinfop9: 'مواعيد العمل:',
-        storeinfop10: 'من السبت إلى الخميس: 12ظهرًا - 12منتصف الليل',
-        storeinfop11: 'الجمعة: 1ظهرًا - 12منتصف الليل'
-      },
-      termsofserv: {
-        head: 'Terms of service'
-      },
-      refundpol: {
-        head: 'Refund policy'
-      }
-    },
-    ui: {
-      basesidebar: {
-        close: 'اغلاق'
-      },
-      editex: {
-        prodoptions: 'تعديل المنتج',
-        editquan: 'الكمية:',
-        editcolor: 'الالوان:',
-        editsize: 'المقاس:',
-        addtocart: 'أضف الي السلة'
-      },
-      popup: {
-        added: 'أضيفت الي السلة الخاصة بك',
-        continueshopping: 'تابع التسوق',
-        gotocart: 'عرض السلة'
-      },
-      thanky: {
-        confirmed: 'تم تأكيد طلبك',
-        confp: 'سيصلك ايميل عندما يجهز طلبك',
-        btn: 'تابع التسوق'
-      }
-    },
-    errorAndNote: {
-      collectionPage: {
-        yoursearch1: 'نتائج البحث عن  ',
-        yoursearch2: ':',
-        nodata1: 'عذرا , انت لم تضف اي منتج الي قائمة امنياتك بعد.',
-        nodata2: 'عذرا , لا يوجد منتجات في هذه المجموعة.',
-        nodata3: 'عذرا , لا يوجد منتجات تطابق هذا البحث.',
-        dataerror: 'عذار , حدث خطأ ما.'
-      },
-      accountPage: {
-        loadorder: 'حدث خطأ في تحميل الطلبات'
-      },
-      header: {
-        loadSpinLangError: 'عذرا , حدث خطأ عند تغيير اللغة , حاول لاحقا',
-        logoutError: 'حدث خطأ في تسجيل الخروج , حاول لاحقا'
-      },
-      store: {
-        mainStore: {
-          responsefiled: 'حدث خطأ في تحميل المنتجات'
-        },
-        authModule: {
-          signupfiled: 'حدث خطأ ما , من فضلك حاول لاحقا',
-          signinfiled: 'البريد الالكتروني او كلمة السر غير صحيحة , من فضلك حاول مجددا'
-        },
-        ordersModule: {
-          setorderfiled: 'حدث خطأ في ارسال الطلبات',
-          fetchordersfiled: 'حدث خطأ في تحميل الطلبات'
-        }
+        email: 'Email',
+        fname: 'Tên',
+        lname: 'Họ',
+        address: 'Địa chỉ',
+        city: 'Thành phố',
+        postalc: 'Mã bưu điện',
+        phone: 'Điện thoại',
+        phoneoptional: 'Điện thoại (tùy chọn)'
       }
     }
   }

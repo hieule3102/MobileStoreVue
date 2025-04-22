@@ -1,11 +1,15 @@
 <template>
   <div>
     <main-header></main-header>
-      <router-view v-slot="{ Component }">
-        <transition name="pagetrans">
-          <component :v-show="donemounted" @fullmounted='fullmounted' :is="Component"></component>
-        </transition>
-      </router-view>
+    <router-view v-slot="{ Component }">
+      <transition name="pagetrans">
+        <component
+          :v-show="donemounted"
+          @fullmounted="fullmounted"
+          :is="Component"
+        ></component>
+      </transition>
+    </router-view>
     <the-footer></the-footer>
     <div class="loading-page" v-if="!donemounted">
       <div class="loading-dots">
@@ -45,10 +49,16 @@ export default {
   created () {
     document.body.classList.add('stop-scrolling')
     if (window.localStorage.getItem('cartProducts') !== null) {
-      this.$store.dispatch('sidebar/setCartBag', JSON.parse(window.localStorage.getItem('cartProducts')))
+      this.$store.dispatch(
+        'sidebar/setCartBag',
+        JSON.parse(window.localStorage.getItem('cartProducts'))
+      )
     }
     if (window.localStorage.getItem('wishlist') !== null) {
-      this.$store.dispatch('addtowishlist', { product: JSON.parse(window.localStorage.getItem('wishlist')), stt: 'reloaddata' })
+      this.$store.dispatch('addtowishlist', {
+        product: JSON.parse(window.localStorage.getItem('wishlist')),
+        stt: 'reloaddata'
+      })
     }
     this.$store.dispatch('auth/tryLogin')
 
@@ -56,15 +66,19 @@ export default {
 
     const linkLang = document.querySelector('.main-font')
 
-    if (JSON.parse(window.localStorage.getItem('lang')) === 'ar') {
-      this.$i18n.locale = 'ar'
-      this.$store.dispatch('setLang', 'ar')
-      this.$store.dispatch('setCurrentLang', 'Arabic')
-      this.$store.dispatch('pageDir', 'rtl')
-      document.documentElement.dir = 'rtl'
-      document.documentElement.lang = 'ar'
-      linkLang.setAttribute('href', this.$store.getters.arFontHref)
-      document.body.style.fontFamily = 'Cairo , sans-serif'
+    if (JSON.parse(window.localStorage.getItem('lang')) === 'vi') {
+      this.$i18n.locale = 'vi'
+      this.$store.dispatch('setLang', 'vi')
+      this.$store.dispatch('setCurrentLang', 'VietNam')
+      // this.$store.dispatch('pageDir', 'rtl')
+      // document.documentElement.dir = 'rtl'
+      this.$store.dispatch('pageDir', 'ltr')
+      document.documentElement.dir = 'ltr'
+      document.documentElement.lang = 'vi'
+      // linkLang.setAttribute("href", this.$store.getters.arFontHref)
+      linkLang.setAttribute('href', this.$store.getters.enFontHref)
+      // document.body.style.fontFamily = "Cairo , sans-serif"
+      document.body.style.fontFamily = 'Poppins, sans-serif'
     } else {
       this.$i18n.locale = 'en'
       this.$store.dispatch('setLang', 'en')
@@ -82,43 +96,43 @@ export default {
 </script>
 
 <style lang="scss">
-  html {
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  &::-webkit-scrollbar {
+    display: none;
   }
-  body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    &::-webkit-scrollbar{
-      display: none;
-    }
-    a{
-      text-decoration: none;
-    }
-    ul{
+  a {
+    text-decoration: none;
+  }
+  ul {
     list-style: none;
     margin: 0;
     padding: 0 !important;
-    }
   }
-  .whitespacee{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    z-index: 10000;
-  }
-  .stop-scrolling{
-    height: 100%;
-    overflow: hidden;
-  }
-  .arouter{
-    position: relative;
-    padding: 0;
-    &::before{
-    content: '';
+}
+.whitespacee {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 10000;
+}
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+.arouter {
+  position: relative;
+  padding: 0;
+  &::before {
+    content: "";
     position: absolute;
     height: 1px;
     width: 0;
@@ -126,41 +140,41 @@ export default {
     left: 0;
     background-color: black;
     transition: all 0.2s ease-in;
-    }
-    &:hover::before{
-      width: 100%;
-    }
   }
-  .shadow{
+  &:hover::before {
+    width: 100%;
+  }
+}
+.shadow {
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
   z-index: 1000;
-  background-color: rgba(0, 0, 0, .6);
+  background-color: rgba(0, 0, 0, 0.6);
 }
-.inpcont{
+.inpcont {
   margin-right: 10px;
-  input{
+  input {
     border-radius: 0;
     width: 90px;
     height: 60px;
-    &::placeholder{
+    &::placeholder {
       font-size: 12px;
     }
-    &:focus{
+    &:focus {
       box-shadow: none;
       border-color: #dee2e6;
       transition-duration: 0.3s;
-      &::placeholder{
+      &::placeholder {
         transition-duration: 0.5s;
         opacity: 0;
       }
     }
   }
 }
-.loading-page{
+.loading-page {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -171,46 +185,46 @@ export default {
   height: 100%;
   background-color: white;
   z-index: 2000;
-  .loading-dots{
+  .loading-dots {
     display: flex;
-    .dot{
+    .dot {
       display: block;
       width: 25px;
       height: 25px;
       border-radius: 50%;
-      background-color: #3ADB89;
+      background-color: #3adb89;
       margin: 0 10px;
       z-index: 2001;
       animation-name: dot-animation;
-      animation-duration: .3s;
+      animation-duration: 0.3s;
       animation-iteration-count: infinite;
       animation-direction: alternate-reverse;
-      &:nth-of-type(2){
-        animation-delay: .1s;
+      &:nth-of-type(2) {
+        animation-delay: 0.1s;
       }
-      &:nth-of-type(3){
-        animation-delay: .2s;
+      &:nth-of-type(3) {
+        animation-delay: 0.2s;
       }
     }
   }
 }
 .pagetrans-enter-from,
-.pagetrans-leave-to{
+.pagetrans-leave-to {
   opacity: 0;
 }
 .pagetrans-enter-to,
-.pagetrans-leave-from{
+.pagetrans-leave-from {
   opacity: 1;
 }
 .pagetrans-enter-active,
-.pagetrans-leave-active{
+.pagetrans-leave-active {
   transition-duration: 0.3s;
 }
 @keyframes dot-animation {
   0% {
   }
   100% {
-    transform: translateY(-20px)
+    transform: translateY(-20px);
   }
 }
 </style>

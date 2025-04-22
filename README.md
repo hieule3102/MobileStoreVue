@@ -1,6 +1,6 @@
 # MobileStoreVue.js
 
-This project is a full-stack e-commerce application built using Vue.js on the frontend and using firebase on the backend. The app provides a seamless and user-friendly shopping experience, allowing users to browse products, add them to the cart, and complete the checkout process. Additionally, it features multilingual support with a focus on RTL (Right-to-Left) languages, such as Arabic, improving overall readability and usability for users in RTL locales.
+This project is a full-stack e-commerce application built using Vue.js on the frontend and using firebase on the backend. The app provides a seamless and user-friendly shopping experience, allowing users to browse products, add them to the cart, and complete the checkout process. Additionally, it features multilingual support with a focus on RTL (Right-to-Left) languages, such as Viet Nam, improving overall readability and usability for users in RTL locales.
 
 ## Features
 
@@ -11,8 +11,8 @@ This project is a full-stack e-commerce application built using Vue.js on the fr
 - **User Authentication**: Secure user authentication and authorization to protect user accounts and ensure a personalized experience.
 
 - **Order Management**: Track order history and manage past and current orders.
-- **Multilingual Support**: The application supports multiple languages, including English and Arabic, providing a more inclusive experience for users worldwide.
-- **RTL (Right-to-Left) Support**: Support for languages that are written from right to left, such as Arabic, improving the overall readability and usability for users in RTL locales.
+- **Multilingual Support**: The application supports multiple languages, including English and Viet Nam, providing a more inclusive experience for users worldwide.
+- **RTL (Right-to-Left) Support**: Support for languages that are written from right to left, such as Viet Nam, improving the overall readability and usability for users in RTL locales.
 
 ## Technologies Used
 

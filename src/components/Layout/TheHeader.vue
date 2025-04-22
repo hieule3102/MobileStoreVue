@@ -2,7 +2,9 @@
   <div v-if="!checkoutpage" :class="issticky">
     <div class="container">
       <nav class="navbar bg-body-tertiory d-flex justify-content-between">
-        <router-link v-if="!mdheader" to="/" class="logo navbar-brand passed">{{ $t('global.header.logo') }}</router-link>
+        <router-link v-if="!mdheader" to="/" class="logo navbar-brand passed">{{
+          $t("global.header.logo")
+        }}</router-link>
         <div v-if="mdheader" class="left-header">
           <font-awesome-icon @click="menutoggle" icon="fa-solid fa-bars" />
           <base-menu :show="mainmenustate">
@@ -12,172 +14,368 @@
               </li>
             </ul>
           </base-menu>
-          <font-awesome-icon @click="togglesearch" class="rightic" icon="fa-solid fa-magnifying-glass" />
+          <font-awesome-icon
+            @click="togglesearch"
+            class="rightic"
+            icon="fa-solid fa-magnifying-glass"
+          />
         </div>
         <div v-if="!mdheader" class="navbar-nav">
-        <ul class="d-flex align-items-center m-0">
-          <li @mouseover="setSlideValmen(true)" @mouseleave="setSlideValmen(false)" class="nav-item">
-            <router-link class="nav-link mx-3 passed arouter setu" to="/collections/MEN">{{ $t('global.header.nav.men') }}</router-link>
-              <base-liinfo :menstate="true" :show='baselimenval'></base-liinfo>
-          </li>
-          <li @mouseover="setSlideValwom(true)" @mouseleave="setSlideValwom(false)" class="nav-item">
-            <router-link class="nav-link mx-3 passed arouter setu" to="/collections/WOMEN">{{ $t('global.header.nav.women') }}</router-link>
-              <base-liinfo :menstate="false" :show='baseliwomval' ></base-liinfo>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link mx-3 passed arouter setu btn dropdown-toggle" href='/collections/KIDS' data-bs-hover='dropdown' aria-expanded='false'>{{ $t('global.header.nav.kids') }}</a>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <li class="dropdown-item"><router-link class="" to="/collections/Graphics">{{ $t('global.header.navList.kids.top1') }}</router-link></li>
-              <li class="dropdown-item"><router-link class="" to="/collections/Zippers">{{ $t('global.header.navList.kids.top2') }}</router-link></li>
-              <li class="dropdown-item"><router-link class="" to="/collections/Pants">{{ $t('global.header.navList.kids.top3') }}</router-link></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <router-link class="nav-link mx-3 passed arouter aces" to="/collections/ACCESSORIES">{{ $t('global.header.nav.accessories') }}</router-link>
-          </li>
-        </ul>
+          <ul class="d-flex align-items-center m-0">
+            <li
+              @mouseover="setSlideValmen(true)"
+              @mouseleave="setSlideValmen(false)"
+              class="nav-item"
+            >
+              <router-link
+                class="nav-link mx-3 passed arouter setu"
+                to="/collections/MEN"
+                >{{ $t("global.header.nav.men") }}</router-link
+              >
+              <base-liinfo :menstate="true" :show="baselimenval"></base-liinfo>
+            </li>
+            <li
+              @mouseover="setSlideValwom(true)"
+              @mouseleave="setSlideValwom(false)"
+              class="nav-item"
+            >
+              <router-link
+                class="nav-link mx-3 passed arouter setu"
+                to="/collections/WOMEN"
+                >{{ $t("global.header.nav.women") }}</router-link
+              >
+              <base-liinfo :menstate="false" :show="baseliwomval"></base-liinfo>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link mx-3 passed arouter setu btn dropdown-toggle"
+                href="/collections/KIDS"
+                data-bs-hover="dropdown"
+                aria-expanded="false"
+                >{{ $t("global.header.nav.kids") }}</a
+              >
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li class="dropdown-item">
+                  <router-link class="" to="/collections/Graphics">{{
+                    $t("global.header.navList.kids.top1")
+                  }}</router-link>
+                </li>
+                <li class="dropdown-item">
+                  <router-link class="" to="/collections/Zippers">{{
+                    $t("global.header.navList.kids.top2")
+                  }}</router-link>
+                </li>
+                <li class="dropdown-item">
+                  <router-link class="" to="/collections/Pants">{{
+                    $t("global.header.navList.kids.top3")
+                  }}</router-link>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <router-link
+                class="nav-link mx-3 passed arouter aces"
+                to="/collections/ACCESSORIES"
+                >{{ $t("global.header.nav.accessories") }}</router-link
+              >
+            </li>
+          </ul>
         </div>
-        <div v-if="mdheader" class="middle-header d-flex align-items-center justify-content-center">
+        <div
+          v-if="mdheader"
+          class="middle-header d-flex align-items-center justify-content-center"
+        >
           <router-link to="/">
-            <img class="mdlogo" src="../../../imgs/secicon.png" alt="">
+            <img class="mdlogo" src="../../../imgs/secicon.png" alt="" />
           </router-link>
         </div>
         <div class="details" aria-label="Default select example">
           <ul class="d-flex align-items-center m-0 p-0">
-            <div v-if="!mdheader" class="dropdown ">
-              <span class="lang-btn dropdown-toggle" type="button" id="lang-DropdownBtn" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div v-if="!mdheader" class="dropdown">
+              <span
+                class="lang-btn dropdown-toggle"
+                type="button"
+                id="lang-DropdownBtn"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
                 <font-awesome-icon icon="fa-solid fa-globe" />
                 {{ currentLang }}
               </span>
               <div class="dropdown-menu" aria-labelledby="lang-DropdownBtn">
-                <a @click.prevent="changeLang('en')" class="dropdown-item" href="#">English</a>
-                <a @click.prevent="changeLang('ar')" class="dropdown-item" href="#">Arabic</a>
+                <a
+                  @click.prevent="changeLang('en')"
+                  class="dropdown-item"
+                  href="#"
+                  >English</a
+                >
+                <a
+                  @click.prevent="changeLang('vi')"
+                  class="dropdown-item"
+                  href="#"
+                  >Viet Nam</a
+                >
               </div>
             </div>
-            <li v-if="!mdheader"  class="nav-item leftic">
+            <li v-if="!mdheader" class="nav-item leftic">
               <router-link to="/Collections/wishlist">
-                <font-awesome-icon  class="favicon" icon="fa-regular fa-heart" />
+                <font-awesome-icon class="favicon" icon="fa-regular fa-heart" />
               </router-link>
             </li>
             <li v-if="!mdheader" class="nav-item leftic">
-              <font-awesome-icon @click="togglesearch" class="" icon="fa-solid fa-magnifying-glass" id="search" />
+              <font-awesome-icon
+                @click="togglesearch"
+                class=""
+                icon="fa-solid fa-magnifying-glass"
+                id="search"
+              />
             </li>
             <li class="nav-item profile">
-              <font-awesome-icon @click="carttoggle('profile')" class="passed" icon="fa-regular fa-user" />
-                <base-sidebar @reset-sidebar-data='resetsidebar' :show ='sideststeprofile' name ='profile'>
-                  <template v-slot:title>{{ $t('global.header.profile.login.header') }}</template>
-                  <template v-if="!loginstate" v-slot:default>
-                    <form @submit.prevent="">
-                      <div class="inputcont">
-                        <label for="#Emailadd">{{ $t('global.header.profile.login.eInput') }} <span>*</span></label>
-                        <input type="Email" id="Emailadd" :placeholder='$t("global.header.placeholders.email")' v-model.trim="email.value" @focus="inputfocus('email')">
-                        <p v-if="!email.valid">{{ $t('global.header.profile.login.evalid') }}</p>
-                      </div>
-                      <div class="inputcont">
-                        <label for="#passwordadd">{{ $t('global.header.profile.login.pInput') }} <span>*</span></label>
-                        <input type="password" id="passwordadd" :placeholder='$t("global.header.placeholders.pass")' v-model.trim="password.value" @focus="inputfocus('password')" autocomplete="on">
-                        <p v-if="!password.valid">{{ $t('global.header.profile.login.pvalid') }}</p>
-                      </div>
-                      <p v-if="signinerrorvis" class="signinerror">{{ signinError }}</p>
-                      <base-button @click="signin" type='main'>{{ $t('global.header.profile.login.loginInput') }}</base-button>
-                    </form>
-                      <span class="forgotpass">
-                        <span class="arouter">{{ $t('global.header.profile.login.forgotP') }}</span>
-                      </span>
-                      <router-link to="/AccountRegister">
-                        <base-button type='main-rev'>{{ $t('global.header.profile.login.createBtn') }}</base-button>
-                      </router-link>
-                  </template>
-                  <template v-else-if="loginstate" v-slot:default>
-                    <div class="btns">
-                      <router-link to="/Account">
-                        <base-button type='main'>{{ $t('global.header.profile.logout.myacc') }}</base-button>
-                      </router-link>
-                      <base-button @click='logout' type='main-rev'>{{ $t('global.header.profile.logout.logoutBtn') }}</base-button>
+              <font-awesome-icon
+                @click="carttoggle('profile')"
+                class="passed"
+                icon="fa-regular fa-user"
+              />
+              <base-sidebar
+                @reset-sidebar-data="resetsidebar"
+                :show="sideststeprofile"
+                name="profile"
+              >
+                <template v-slot:title>{{
+                  $t("global.header.profile.login.header")
+                }}</template>
+                <template v-if="!loginstate" v-slot:default>
+                  <form @submit.prevent="">
+                    <div class="inputcont">
+                      <label for="#Emailadd"
+                        >{{ $t("global.header.profile.login.eInput") }}
+                        <span>*</span></label
+                      >
+                      <input
+                        type="Email"
+                        id="Emailadd"
+                        :placeholder="$t('global.header.placeholders.email')"
+                        v-model.trim="email.value"
+                        @focus="inputfocus('email')"
+                      />
+                      <p v-if="!email.valid">
+                        {{ $t("global.header.profile.login.evalid") }}
+                      </p>
                     </div>
-                  </template>
-                </base-sidebar>
+                    <div class="inputcont">
+                      <label for="#passwordadd"
+                        >{{ $t("global.header.profile.login.pInput") }}
+                        <span>*</span></label
+                      >
+                      <input
+                        type="password"
+                        id="passwordadd"
+                        :placeholder="$t('global.header.placeholders.pass')"
+                        v-model.trim="password.value"
+                        @focus="inputfocus('password')"
+                        autocomplete="on"
+                      />
+                      <p v-if="!password.valid">
+                        {{ $t("global.header.profile.login.pvalid") }}
+                      </p>
+                    </div>
+                    <p v-if="signinerrorvis" class="signinerror">
+                      {{ signinError }}
+                    </p>
+                    <base-button @click="signin" type="main">{{
+                      $t("global.header.profile.login.loginInput")
+                    }}</base-button>
+                  </form>
+                  <span class="forgotpass">
+                    <span class="arouter">{{
+                      $t("global.header.profile.login.forgotP")
+                    }}</span>
+                  </span>
+                  <router-link to="/AccountRegister">
+                    <base-button type="main-rev">{{
+                      $t("global.header.profile.login.createBtn")
+                    }}</base-button>
+                  </router-link>
+                </template>
+                <template v-else-if="loginstate" v-slot:default>
+                  <div class="btns">
+                    <router-link to="/Account">
+                      <base-button type="main">{{
+                        $t("global.header.profile.logout.myacc")
+                      }}</base-button>
+                    </router-link>
+                    <base-button @click="logout" type="main-rev">{{
+                      $t("global.header.profile.logout.logoutBtn")
+                    }}</base-button>
+                  </div>
+                </template>
+              </base-sidebar>
             </li>
             <li class="nav-item cart-container">
               <div class="cart">
-                <font-awesome-icon @click="carttoggle('cart')" class="rightic passed" icon="fa-solid fa-cart-shopping" />
-                <span @click="carttoggle('cart')">{{ cartBagItems.length }}</span>
+                <font-awesome-icon
+                  @click="carttoggle('cart')"
+                  class="rightic passed"
+                  icon="fa-solid fa-cart-shopping"
+                />
+                <span @click="carttoggle('cart')">{{
+                  cartBagItems.length
+                }}</span>
               </div>
-                <base-sidebar :show ='sideststecart' name ='cart'>
-                  <template v-slot:title>{{ $t('global.header.cart.emptyCart.header') }}</template>
-                  <template v-slot:default>
-                    <div v-if="cartBagItems.length === 0" class="empty-tem">
-                      <span class="emptycart">{{ $t('global.header.cart.emptyCart.pEmpty') }}</span>
-                      <base-button @click="closesidebar('cart')" type='main-rev'>{{ $t('global.header.cart.emptyCart.continueBtn') }}</base-button>
-                    </div>
-                    <div v-if="cartBagItems.length !== 0" class="cart-products">
-                      <span class="items-count">{{ cartBagItems.length + ' ' + $t('global.header.cart.fullCart.items')}}</span>
-                      <div class="products">
-                        <div v-for="product in cartBagItems" :key="product.id" class="product">
-                          <div class="prodimg">
-                            <img :src='product.img' alt="">
-                          </div>
-                          <div class="info">
-                            <router-link :to="'/products/' + product.name" class="prodname">{{ product.name }}</router-link>
-                            <div class="editcat">
-                              <div class="prodsc">{{ product.color }} / {{ product.size }}</div>
-                              <font-awesome-icon @click="openeditpopup(product.cartId)" icon="fa-solid fa-pen-to-square"/>
+              <base-sidebar :show="sideststecart" name="cart">
+                <template v-slot:title>{{
+                  $t("global.header.cart.emptyCart.header")
+                }}</template>
+                <template v-slot:default>
+                  <div v-if="cartBagItems.length === 0" class="empty-tem">
+                    <span class="emptycart">{{
+                      $t("global.header.cart.emptyCart.pEmpty")
+                    }}</span>
+                    <base-button
+                      @click="closesidebar('cart')"
+                      type="main-rev"
+                      >{{
+                        $t("global.header.cart.emptyCart.continueBtn")
+                      }}</base-button
+                    >
+                  </div>
+                  <div v-if="cartBagItems.length !== 0" class="cart-products">
+                    <span class="items-count">{{
+                      cartBagItems.length +
+                      " " +
+                      $t("global.header.cart.fullCart.items")
+                    }}</span>
+                    <div class="products">
+                      <div
+                        v-for="product in cartBagItems"
+                        :key="product.id"
+                        class="product"
+                      >
+                        <div class="prodimg">
+                          <img :src="product.img" alt="" />
+                        </div>
+                        <div class="info">
+                          <router-link
+                            :to="'/products/' + product.name"
+                            class="prodname"
+                            >{{ product.name }}</router-link
+                          >
+                          <div class="editcat">
+                            <div class="prodsc">
+                              {{ product.color }} / {{ product.size }}
                             </div>
-                            <div class="quan">
-                              <span>{{ $t('global.header.cart.fullCart.quant') + product.count}}</span>
-                            </div>
-                            <div class="prodprice">{{ product.discount ?  (product.price - product.discount).toFixed(2) : product.price }} LE</div>
+                            <font-awesome-icon
+                              @click="openeditpopup(product.cartId)"
+                              icon="fa-solid fa-pen-to-square"
+                            />
                           </div>
-                          <div @click="removeproduct" :data-id='product.cartId' class="closebtn">X</div>
+                          <div class="quan">
+                            <span>{{
+                              $t("global.header.cart.fullCart.quant") +
+                              product.count
+                            }}</span>
+                          </div>
+                          <div class="prodprice">
+                            {{
+                              product.discount
+                                ? (product.price - product.discount).toFixed(2)
+                                : product.price
+                            }}
+                            LE
+                          </div>
                         </div>
-                        <edit-popup :cartId='deitele.cartId' :id='deitele.id' :count='deitele.count' :name='deitele.name' :img='deitele.img' :color='deitele.color' :size='deitele.size' :price='deitele.price' :discount='deitele.discount' :show='editpopupval'></edit-popup>
+                        <div
+                          @click="removeproduct"
+                          :data-id="product.cartId"
+                          class="closebtn"
+                        >
+                          X
+                        </div>
                       </div>
-                      <div class="controls">
-                        <div class="products-info">
-                          <div class="total">
-                            <span class="tit">{{ $t('global.header.cart.fullCart.total') }}</span>
-                            <span class="total-num">{{ totalCartPrice }} LE</span>
-                          </div>
-                          <div class="shipping">
-                            <span class="tit">{{ $t('global.header.cart.fullCart.shippingtitle') }}</span>
-                            <span class="taxes">{{ $t('global.header.cart.fullCart.shippingtaxes') }}</span>
-                          </div>
+                      <edit-popup
+                        :cartId="deitele.cartId"
+                        :id="deitele.id"
+                        :count="deitele.count"
+                        :name="deitele.name"
+                        :img="deitele.img"
+                        :color="deitele.color"
+                        :size="deitele.size"
+                        :price="deitele.price"
+                        :discount="deitele.discount"
+                        :show="editpopupval"
+                      ></edit-popup>
+                    </div>
+                    <div class="controls">
+                      <div class="products-info">
+                        <div class="total">
+                          <span class="tit">{{
+                            $t("global.header.cart.fullCart.total")
+                          }}</span>
+                          <span class="total-num">{{ totalCartPrice }} LE</span>
                         </div>
-                        <div class="btns">
-                          <router-link to='/checkouts'>
-                            <base-button type='gray-white'>{{ $t('global.header.cart.fullCart.checkout') }}</base-button>
-                          </router-link>
-                          <router-link to='/cart'>
-                            <base-button type='main-rev'>{{ $t('global.header.cart.fullCart.viewcart') }}</base-button>
-                          </router-link>
+                        <div class="shipping">
+                          <span class="tit">{{
+                            $t("global.header.cart.fullCart.shippingtitle")
+                          }}</span>
+                          <span class="taxes">{{
+                            $t("global.header.cart.fullCart.shippingtaxes")
+                          }}</span>
                         </div>
+                      </div>
+                      <div class="btns">
+                        <router-link to="/checkouts">
+                          <base-button type="gray-white">{{
+                            $t("global.header.cart.fullCart.checkout")
+                          }}</base-button>
+                        </router-link>
+                        <router-link to="/cart">
+                          <base-button type="main-rev">{{
+                            $t("global.header.cart.fullCart.viewcart")
+                          }}</base-button>
+                        </router-link>
                       </div>
                     </div>
-                  </template>
-                </base-sidebar>
+                  </div>
+                </template>
+              </base-sidebar>
             </li>
           </ul>
         </div>
       </nav>
     </div>
   </div>
-  <teleport to='body'>
+  <teleport to="body">
     <transition name="search">
       <div v-if="searchVal" class="search">
         <div class="input-group">
           <div class="input-group-text">
-            <font-awesome-icon @click="searchsubmit" icon="fa-solid fa-magnifying-glass" id="search" />
+            <font-awesome-icon
+              @click="searchsubmit"
+              icon="fa-solid fa-magnifying-glass"
+              id="search"
+            />
           </div>
-          <input type="search" @keyup.enter='searchsubmit' class="form-control" placeholder="Search" aria-label="search" aria-describedby="search" v-model.trim="search">
+          <input
+            type="search"
+            @keyup.enter="searchsubmit"
+            class="form-control"
+            placeholder="Search"
+            aria-label="search"
+            aria-describedby="search"
+            v-model.trim="search"
+          />
         </div>
       </div>
     </transition>
   </teleport>
-  <loading-popup :show='isLoading'></loading-popup>
+  <loading-popup :show="isLoading"></loading-popup>
   <div v-if="checkoutpage" class="checkouts">
     <div class="container">
       <div class="checkout-header">
-        <router-link to="/" class="logo">{{ $t('global.header.logo') }}</router-link>
+        <router-link to="/" class="logo">{{
+          $t("global.header.logo")
+        }}</router-link>
         <router-link to="/cart">
           <font-awesome-icon icon="fa-solid fa-cart-shopping" />
         </router-link>
@@ -187,7 +385,6 @@
 </template>
 
 <script>
-
 import baseLiinfo from '../Ui/BaseLiInfo.vue'
 import BaseSidebar from '../Ui/BaseSidebar.vue'
 import BaseMenu from '../Ui/BaseMenu.vue'
@@ -243,18 +440,23 @@ export default {
           linkLang.setAttribute('href', this.$store.getters.enFontHref)
           document.body.style.fontFamily = 'Poppins, sans-serif'
         } else {
-          this.$i18n.locale = lang
-          this.$store.dispatch('setLang', 'ar')
-          this.$store.dispatch('setCurrentLang', 'Arabic')
-          this.$store.dispatch('pageDir', 'rtl')
-          document.documentElement.dir = 'rtl'
-          document.documentElement.lang = 'ar'
-          linkLang.setAttribute('href', this.$store.getters.arFontHref)
-          document.body.style.fontFamily = 'Cairo , sans-serif'
+          this.$i18n.locale = 'vi'
+          this.$store.dispatch('setLang', 'vi')
+          this.$store.dispatch('setCurrentLang', 'VietNam')
+          // this.$store.dispatch('pageDir', 'rtl')
+          // document.documentElement.dir = 'rtl'
+          this.$store.dispatch('pageDir', 'ltr')
+          document.documentElement.dir = 'ltr'
+          document.documentElement.lang = 'vi'
+          // linkLang.setAttribute("href", this.$store.getters.arFontHref)
+          linkLang.setAttribute('href', this.$store.getters.enFontHref)
+          // document.body.style.fontFamily = "Cairo , sans-serif"
+          document.body.style.fontFamily = 'Poppins, sans-serif'
         }
         window.localStorage.setItem('lang', JSON.stringify(lang))
       } catch (error) {
-        this.loadSpinLangError = error || this.$i18n.t('errorAndNote.header.loadSpinLangError')
+        this.loadSpinLangError =
+          error || this.$i18n.t('errorAndNote.header.loadSpinLangError')
       }
       this.isLoading = false
     },
@@ -266,7 +468,8 @@ export default {
           this.$router.replace('/')
         }
       } catch (error) {
-        this.logoutError = error || this.$i18n.t('errorAndNote.header.logoutError')
+        this.logoutError =
+          error || this.$i18n.t('errorAndNote.header.logoutError')
       }
       this.isLoading = false
     },
@@ -288,7 +491,10 @@ export default {
       if (this.formValidation === true) {
         this.isLoading = true
         try {
-          await this.$store.dispatch('auth/signin', { email: this.email.value, password: this.password.value })
+          await this.$store.dispatch('auth/signin', {
+            email: this.email.value,
+            password: this.password.value
+          })
           this.signinerrorvis = false
           this.$router.replace('/Account')
         } catch (error) {
@@ -438,9 +644,11 @@ export default {
           return ele.price * ele.count
         }
       })
-      return prices.reduce((acc, curr) => {
-        return acc + curr
-      }, 0).toFixed(2)
+      return prices
+        .reduce((acc, curr) => {
+          return acc + curr
+        }, 0)
+        .toFixed(2)
     },
     cartBagItems () {
       return this.$store.getters['sidebar/cartBag']
@@ -455,9 +663,17 @@ export default {
       return this.$store.getters['sidebar/profilesideval']
     },
     issticky () {
-      if (this.scrolly === 0 && this.mdheader === false && this.$route.path === '/') {
+      if (
+        this.scrolly === 0 &&
+        this.mdheader === false &&
+        this.$route.path === '/'
+      ) {
         return 'contt'
-      } else if (this.scrolly !== 0 && this.mdheader === false && this.$route.path === '/') {
+      } else if (
+        this.scrolly !== 0 &&
+        this.mdheader === false &&
+        this.$route.path === '/'
+      ) {
         return 'contt passed'
       } else if (this.$route.path !== '/' && this.mdheader === false) {
         return 'contt passed'
@@ -476,7 +692,7 @@ export default {
       if (lang === 'en') {
         this.$i18n.locale = 'en'
       } else {
-        this.$i18n.locale = 'ar'
+        this.$i18n.locale = 'vi'
       }
     }
   },
@@ -498,25 +714,25 @@ export default {
 
 <style lang="scss" scoped>
 @media (max-width: 1200px) {
-  .search{
+  .search {
     width: 90% !important;
     top: 60px !important;
   }
   .search-enter-to,
-  .search-leave-from{
+  .search-leave-from {
     top: 60px !important;
     opacity: 1;
   }
-  .search-enter-from{
+  .search-enter-from {
     top: 40px !important;
     opacity: 0;
   }
-  .search-leave-to{
+  .search-leave-to {
     top: 40px !important;
     opacity: 0;
   }
 }
-.search{
+.search {
   position: fixed;
   top: 80px;
   left: 50%;
@@ -526,161 +742,161 @@ export default {
   align-items: center;
   justify-content: center;
   z-index: 0;
-  input{
+  input {
     background-color: #f1f3f4;
-    &:focus{
+    &:focus {
       box-shadow: none;
       outline: none;
       border-color: #dee2e6;
     }
   }
-  .input-group-text{
+  .input-group-text {
     background-color: #f1f3f4;
-    svg{
+    svg {
       padding-top: 0;
       padding-bottom: 0;
     }
   }
 }
-.checkouts{
+.checkouts {
   border-bottom: 1px solid #dfdfdf;
-  .checkout-header{
+  .checkout-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 83px;
-    .logo{
+    .logo {
       cursor: pointer;
     }
   }
 }
-  .contt{
-    position: absolute;
-    width: 100%;
-    z-index: 1;
-    transition-duration: .3s;
-    &.passed{
-      background-color: white;
-      position: fixed;
+.contt {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  transition-duration: 0.3s;
+  &.passed {
+    background-color: white;
+    position: fixed;
+    box-shadow: -13px -8px 10px 0px black;
+  }
+  .navbar {
+    padding-top: 15px;
+    padding-bottom: 0;
+    &.scr {
+      padding-top: 5px;
+    }
+    &.ddscr {
+      padding-top: 10px;
+    }
+  }
+  &.mdheader {
+    background-color: white;
+    position: fixed;
+    &.mdhpassed {
+      animation-name: mdheadertrans;
+      animation-duration: 0.6s;
       box-shadow: -13px -8px 10px 0px black;
     }
-    .navbar{
-      padding-top: 15px;
-      padding-bottom: 0;
-      &.scr{
-        padding-top: 5px;
-      }
-      &.ddscr{
-        padding-top: 10px;
-      }
+    .navbar {
+      padding: 5px 0 0 0;
     }
-    &.mdheader{
-      background-color: white;
-      position: fixed;
-      &.mdhpassed{
-        animation-name: mdheadertrans ;
-        animation-duration: 0.6s;
-        box-shadow: -13px -8px 10px 0px black;
-      }
-      .navbar{
-        padding: 5px 0 0 0;
-      }
-      svg{
-        color: black !important;
-      }
+    svg {
+      color: black !important;
     }
   }
-  a{
-    text-decoration: none;
-  }
-  .navbar .logo,
-  .checkout-header .logo{
+}
+a {
+  text-decoration: none;
+}
+.navbar .logo,
+.checkout-header .logo {
   font-size: 30px;
   font-weight: bold;
   color: #202020 !important;
-  }
-  .mdlogo{
-    height: 25px;
-    width: 20px;
-  }
-  .cart-container{
-    .cart{
-      position: relative;
-      span{
-        position: absolute;
-        height: 22px;
-        width: 22px;
-        top: 3px;
-        right: -8px;
-        background-color: #ff9800 ;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 13px;
-        color: white;
-        line-height: 0px;
-        cursor: pointer;
-      }
+}
+.mdlogo {
+  height: 25px;
+  width: 20px;
+}
+.cart-container {
+  .cart {
+    position: relative;
+    span {
+      position: absolute;
+      height: 22px;
+      width: 22px;
+      top: 3px;
+      right: -8px;
+      background-color: #ff9800;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      color: white;
+      line-height: 0px;
+      cursor: pointer;
     }
-    .cart-products{
-    .items-count{
+  }
+  .cart-products {
+    .items-count {
       color: #505050;
     }
-    .products{
+    .products {
       margin: 35px 0 30px;
-      .product{
+      .product {
         display: flex;
         align-items: center;
         margin-bottom: 38px;
-        .prodimg{
+        .prodimg {
           padding-right: 15px;
-          img{
+          img {
             width: 100px;
             height: 100px;
           }
         }
-        .info{
-          a{
+        .info {
+          a {
             color: black;
           }
-          .quan{
+          .quan {
             color: #808080;
             font-weight: 700;
             font-size: 12px;
           }
-          .prodname{
+          .prodname {
             font-weight: 600;
             font-size: 13px;
           }
-          .editcat{
+          .editcat {
             display: flex;
             align-items: center;
             margin-top: 5px;
-            .prodsc{
+            .prodsc {
               font-size: 12px;
               font-weight: 400;
               color: #505050;
               margin-right: 10px;
             }
-            svg{
+            svg {
               font-size: 13px;
-              color:  gray !important;
+              color: gray !important;
               padding: 0;
-              &:hover{
+              &:hover {
                 color: black !important;
                 transition-duration: 0.2s;
               }
             }
           }
-          .prodprice{
+          .prodprice {
             margin-top: 12px;
             margin-bottom: 10px;
             font-weight: 700;
             font-size: 14px;
           }
         }
-        .closebtn{
+        .closebtn {
           display: flex;
           align-items: center;
           justify-content: center;
@@ -690,7 +906,7 @@ export default {
           font-weight: 600;
           font-size: 16px;
           margin-left: auto;
-          &:hover{
+          &:hover {
             background-color: #f4f4f4;
             color: #232323;
             cursor: pointer;
@@ -699,110 +915,109 @@ export default {
         }
       }
     }
-    .controls{
-      .products-info{
+    .controls {
+      .products-info {
         padding-top: 35px;
         border-top: 1px solid #ebebeb;
-        .tit{
+        .tit {
           color: #202020;
           font-size: 13px;
           font-weight: 600;
         }
-        .total{
+        .total {
           display: flex;
           align-items: center;
           margin-bottom: 15px;
-          .total-num{
+          .total-num {
             width: 100%;
             text-align: center;
             font-size: 17px;
             font-weight: 700;
           }
-          .tit{
+          .tit {
             margin-right: 40px;
           }
         }
-        .shipping{
+        .shipping {
           display: flex;
           align-items: center;
           margin-bottom: 15px;
-          .tit{
+          .tit {
             margin-right: 40px;
           }
-          .taxes{
+          .taxes {
             font-size: 11px;
             color: #808080;
-            }
+          }
         }
       }
-      .btns{
+      .btns {
         display: flex;
         align-items: center;
         justify-content: center;
-        a{
+        a {
           width: 100%;
         }
-        a:nth-child(1){
+        a:nth-child(1) {
           margin-right: 10px;
         }
-        button{
+        button {
           white-space: nowrap;
         }
       }
     }
   }
-  }
-  .profile{
-    .btns{
-      button{
-        margin-top: 20px !important;
-      }
-    }
-    p{
-      color: red;
-      font-size: 13px;
-      margin-top: 5px;
-      margin-bottom: 0;
+}
+.profile {
+  .btns {
+    button {
+      margin-top: 20px !important;
     }
   }
-  .nav-item{
-    .emptycart{
-      display: block;
-      text-align: center;
-      font-size: 13px;
-      margin: 7px 0 15px 0;
-      color: #505050;
-    }
+  p {
+    color: red;
+    font-size: 13px;
+    margin-top: 5px;
+    margin-bottom: 0;
   }
-  .arouter{
-    &::before{
+}
+.nav-item {
+  .emptycart {
+    display: block;
+    text-align: center;
+    font-size: 13px;
+    margin: 7px 0 15px 0;
+    color: #505050;
+  }
+}
+.arouter {
+  &::before {
     background-color: black;
     bottom: 20px;
-    }
-    &.passwhite::before{
-      background-color: black ;
-    }
   }
-  .nav-link{
-    padding-bottom: 22px;
-    padding-top: 13px;
+  &.passwhite::before {
+    background-color: black;
   }
-  .navbar-brand{
-    padding-top: 5px;
-    padding-bottom: 13px;
-  }
-  .nav-link
-  .navbar-brand{
-    color: black;
-    font-size: 40px;
-  }
-  .nav-link.passed,
-  .navbar-brand.passed{
-    color: black;
-  }
-.details{
-  .dropdown{
-    span{
+}
+.nav-link {
+  padding-bottom: 22px;
+  padding-top: 13px;
+}
+.navbar-brand {
+  padding-top: 5px;
+  padding-bottom: 13px;
+}
+.nav-link .navbar-brand {
+  color: black;
+  font-size: 40px;
+}
+.nav-link.passed,
+.navbar-brand.passed {
+  color: black;
+}
+.details {
+  .dropdown {
+    span {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -815,153 +1030,153 @@ export default {
       border-radius: 6px;
       padding: 0 15px;
       transition-duration: 0.3s;
-      &.show{
+      &.show {
         background-color: #e7e8ea;
       }
-      &:hover{
+      &:hover {
         background-color: #e7e8ea;
       }
-      svg{
+      svg {
         margin-inline-end: 5px;
-        &::after{
+        &::after {
           margin-inline-end: 5px !important;
         }
       }
     }
   }
-  form{
-    .inputcont{
+  form {
+    .inputcont {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
       margin-bottom: 15px;
-      &:first-of-type{
+      &:first-of-type {
         margin-top: 22px;
       }
-      label{
+      label {
         color: #202020;
         margin-bottom: 6px;
         font-size: 13px;
         font-weight: 500;
-        span{
+        span {
           color: #f1152f;
           margin-left: 5px;
           font-weight: 700;
         }
       }
-      input{
+      input {
         width: 100%;
         border: 1px solid #dfdfdf;
         padding: 13px 12px 11px;
-        &:focus{
+        &:focus {
           outline: none;
         }
-        &::placeholder{
+        &::placeholder {
           font-size: 12px;
         }
       }
     }
-    .signinerror{
+    .signinerror {
       margin-bottom: 15px;
     }
   }
-  .forgotpass{
+  .forgotpass {
     display: block;
     width: 100%;
     text-align: center;
     font-size: 12px;
     color: #505050;
     margin: 20px 0 23px;
-    span{
+    span {
       cursor: pointer;
-      &::before{
+      &::before {
         bottom: -4px;
       }
     }
   }
-  .favicon{
+  .favicon {
     transition-duration: 0.3s;
-    &:hover{
-      color: #3ADB89;
+    &:hover {
+      color: #3adb89;
     }
   }
 }
-.nav-item{
-  .dropdown-menu{
-  position: absolute;
-  border-radius: 0;
-  left: 0;
-  padding: 0;
-  background-color: #f8f8f8;
-  border: none;
-  .dropdown-item{
-    padding: 0 20px;
-    color: #3c3c3c;
-    transition: all .2s ease-in;
-    a{
-      display: block;
-      font-size: 14px;
-      padding: 10px 0 8px;
-      border-bottom: 1px solid #e0e0e0;
-      color: inherit;
-    }
-    &:hover{
-      color:#3ADB89;
-      background-color: white;
+.nav-item {
+  .dropdown-menu {
+    position: absolute;
+    border-radius: 0;
+    left: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    border: none;
+    .dropdown-item {
+      padding: 0 20px;
+      color: #3c3c3c;
+      transition: all 0.2s ease-in;
+      a {
+        display: block;
+        font-size: 14px;
+        padding: 10px 0 8px;
+        border-bottom: 1px solid #e0e0e0;
+        color: inherit;
+      }
+      &:hover {
+        color: #3adb89;
+        background-color: white;
+      }
     }
   }
-  }
-  .dropdown-toggle::after{
+  .dropdown-toggle::after {
     border: none;
   }
-  &.dropdown:hover>.dropdown-menu {
+  &.dropdown:hover > .dropdown-menu {
     display: block;
   }
 }
-svg{
+svg {
   font-size: 23px;
   font-weight: 400;
   color: black;
   cursor: pointer;
   padding: 10px 0;
-  &.rightic{
+  &.rightic {
     margin-inline-start: 30px;
   }
+}
+.leftic {
+  margin-inline-end: 30px;
+}
+.secheader {
+  .passed {
+    color: black !important;
   }
-  .leftic{
-    margin-inline-end: 30px;
+}
+@keyframes mdheadertrans {
+  0% {
+    transform: translateY(-60px);
+    opacity: 0;
   }
-  .secheader{
-    .passed{
-      color: black !important;
-    }
-  }
-  @keyframes mdheadertrans {
-    0%{
-      transform: translateY(-60px);
-      opacity: 0;
-    }
-    100%{
-      transform: translateY(0px);
-      opacity: 1;
-    }
-  }
-  .search-enter-active,
-  .search-leave-active{
-    transition: all 0.3s ease-out;
-  }
-  .search-enter-to,
-  .search-leave-from{
-    top: 80px;
+  100% {
+    transform: translateY(0px);
     opacity: 1;
   }
-  .search-enter-from{
-    top: 50px;
-    opacity: 0;
-  }
-  .search-leave-to{
-    top: 50px;
-    opacity: 0;
-  }
+}
+.search-enter-active,
+.search-leave-active {
+  transition: all 0.3s ease-out;
+}
+.search-enter-to,
+.search-leave-from {
+  top: 80px;
+  opacity: 1;
+}
+.search-enter-from {
+  top: 50px;
+  opacity: 0;
+}
+.search-leave-to {
+  top: 50px;
+  opacity: 0;
+}
 </style>

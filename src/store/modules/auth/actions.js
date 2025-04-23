@@ -3,19 +3,26 @@ import i18n from '../../../i18n'
 let timer
 export default {
   async signup (context, payload) {
-    const response = await fetch('https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyDi3O8ofYEFjkn10raFxNbnFGSbhImAp9Y', {
-      method: 'POST',
-      body: JSON.stringify({
-        email: payload.email,
-        password: payload.password,
-        returnSecureToken: true
-      })
-    })
+    const response = await fetch(
+      'https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyBG0L0TUwFkNNNDNZNXLjK77aXjEE_D08A',
+      {
+        method: 'POST',
+        body: JSON.stringify({
+          email: payload.email,
+          password: payload.password,
+          returnSecureToken: true
+        })
+      }
+    )
     const responseData = await response.json()
     if (!response.ok) {
-      const error = new Error(responseData.message || i18n.global.t('errorAndNote.store.authModule.signupfiled'))
+      const error = new Error(
+        responseData.message ||
+          i18n.global.t('errorAndNote.store.authModule.signupfiled')
+      )
       throw error
-    } const expiresIn = +responseData.expiresIn * 1000
+    }
+    const expiresIn = +responseData.expiresIn * 1000
     const expirationDate = new Date().getTime() + expiresIn
     window.localStorage.setItem('userId', responseData.localId)
     window.localStorage.setItem('token', responseData.idToken)
@@ -29,19 +36,26 @@ export default {
     })
   },
   async signin (context, payload) {
-    const response = await fetch('https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyDi3O8ofYEFjkn10raFxNbnFGSbhImAp9Y', {
-      method: 'POST',
-      body: JSON.stringify({
-        email: payload.email,
-        password: payload.password,
-        returnSecureToken: true
-      })
-    })
+    const response = await fetch(
+      'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyBG0L0TUwFkNNNDNZNXLjK77aXjEE_D08A',
+      {
+        method: 'POST',
+        body: JSON.stringify({
+          email: payload.email,
+          password: payload.password,
+          returnSecureToken: true
+        })
+      }
+    )
     const responseData = await response.json()
     if (!response.ok) {
-      const error = new Error(responseData.message || i18n.global.t('errorAndNote.store.authModule.signinfiled'))
+      const error = new Error(
+        responseData.message ||
+          i18n.global.t('errorAndNote.store.authModule.signinfiled')
+      )
       throw error
-    } const expiresIn = +responseData.expiresIn * 1000
+    }
+    const expiresIn = +responseData.expiresIn * 1000
     const expirationDate = new Date().getTime() + expiresIn
     window.localStorage.setItem('userId', responseData.localId)
     window.localStorage.setItem('token', responseData.idToken)

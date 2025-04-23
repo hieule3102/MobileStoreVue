@@ -4,85 +4,100 @@ const messages = {
   en: {
     global: {
       header: {
-        logo: 'stabraq',
+        logo: 'HiepMobile',
         nav: {
-          men: 'Men',
-          women: 'Women',
-          kids: 'Kids',
+          men: 'Phones, Tablets',
+          women: 'Laptops',
+          kids: 'Watches, Cameras',
           accessories: 'Accessories'
         },
         navList: {
           men: {
-            allmen: 'ALL MEN',
-            alltops: 'all tops',
-            top: 'TOPS',
-            top1: 'T-SHIRTS',
-            top2: 'Graphics',
-            top3: 'Grafit-tee',
-            top4: 'Polo',
-            top5: 'Shirts',
-            top6: 'Long-Sleeves',
-            top7: 'Hoodies',
-            top8: 'Zippers',
-            top9: 'Pullovers',
-            top10: 'Jackets & Coats',
-            allbott: 'all bottoms',
-            bottom: 'BOTTOMS',
-            bottom1: 'Jeans',
-            bottom2: 'Jogger',
-            bottom3: 'Sweatpants',
-            bottom4: 'Shorts',
-            alljil: 'all jilbab',
-            jilbab: 'JILBAB',
-            jilbab1: 'jilbab',
-            allfeat: 'all featured',
+            allmen: 'ALL PHONES',
+            alltops: 'All phones',
+            top: 'iPhone',
+            top1: 'Xiaomi',
+            top2: 'Samsung',
+            top3: 'Oppo',
+            top4: 'Realme',
+            top5: 'Vivo',
+            top6: 'Nokia',
+            top7: 'Motorola',
+            top8: 'Asus',
+            top9: 'Tecno',
+            top10: 'Infinix',
+
+            allbott: 'ALL TABLETS',
+            bottom: 'TABLETS',
+            bottom1: 'iPad',
+            bottom2: 'Samsung Tab',
+            bottom3: 'Xiaomi Pad',
+            bottom4: 'Lenovo Tab',
+
+            alljil: 'ALL PHONE & TABLET ACCESSORIES',
+            jilbab: 'ACCESSORIES',
+            jilbab1: 'Phone Cases',
+            jilbab2: 'Charging Cables',
+            jilbab3: 'Headphones',
+            jilbab4: 'Stands',
+            jilbab5: 'Memory Cards',
+            jilbab6: 'Power Banks',
+            jilbab7: 'Screen Protectors',
+            jilbab8: 'Stylus Pens',
+
+            allfeat: 'ALL FEATURED',
             featured: 'FEATURED',
-            shopallmen: 'SHOP ALL MEN',
-            allaccess: 'all accessories',
-            accessories: 'ACCESSORIES',
-            accessories1: 'Socks',
-            accessories2: 'Wallet',
-            accessories3: 'Notebooks',
-            accessories4: 'Gift Card',
+            shopallmen: 'BUY ALL PHONES & TABLETS',
+            allaccess: 'ALL OTHER ACCESSORIES',
+            accessories: 'OTHER ACCESSORIES',
+            accessories1: 'Fitness Trackers',
+            accessories2: 'Bluetooth Speakers',
+            accessories3: 'Chargers',
+            accessories4: 'LED Livestream Lights',
             newarr: 'New Arrivals'
           },
           women: {
-            allwomen: 'all women',
-            alltops: 'all tops',
-            top: 'TOPS',
-            top1: 'Basics',
-            top2: 'Graphics',
-            top3: 'Zippers',
-            top4: 'Pullovers',
-            top5: 'Sweatshirts',
-            bottom: 'BOTTOMS',
-            allbottoms: 'all bottoms',
-            bottom1: 'Skirts',
-            dress: 'DRESSES & JUMPSITS',
-            alldress: 'all dresses & jumpsuits',
-            dress1: 'Dress',
-            accessories: 'ACCESSORIES',
-            allaccesswomen: 'all accessories',
-            accessories1: 'Socks',
-            accessories2: 'Scarf',
-            accessories3: 'Notebooks',
-            accessories4: 'Gift Card',
+            allwomen: 'ALL LAPTOPS',
+            alltops: 'All laptops',
+            top: 'LAPTOPS',
+            top1: 'MacBook',
+            top2: 'Dell',
+            top3: 'HP',
+            top4: 'Asus',
+            top5: 'Acer',
+
+            bottom: 'SEGMENTS',
+            allbottoms: 'All segments',
+            bottom1: 'Office – Study',
+            dress: 'SPECIALIZED',
+            alldress: 'All specialized lines',
+            dress1: 'Gaming',
+            dress2: 'Graphics – Engineering',
+            dress3: 'Business – Premium',
+
+            accessories: 'LAPTOP ACCESSORIES',
+            allaccesswomen: 'All laptop accessories',
+            accessories1: 'Mice',
+            accessories2: 'Keyboards',
+            accessories3: 'Laptop Sleeves',
+            accessories4: 'Laptop Backpacks',
+
             featured: 'FEATURED',
-            allfeatured: 'all featured',
-            featured1: 'New Arrivals',
-            shopallwomen: 'SHOP ALL WOMEN'
+            allfeatured: 'All featured',
+            featured1: 'New Products',
+            shopallwomen: 'BUY ALL LAPTOPS'
           },
           kids: {
-            allkids: 'all kids',
-            top1: 'Pants',
-            top2: 'Graphics',
-            top3: 'Zippers'
+            allkids: 'ALL WATCHES',
+            top1: "Men's Watches",
+            top2: "Women's Watches",
+            top3: 'Sports Watches'
           }
         },
         cart: {
           emptyCart: {
             btn: 'CLOSE',
-            header: 'YOUR BAG',
+            header: 'YOUR CART',
             pEmpty: 'Your cart is currently empty.',
             continueBtn: 'CONTINUE SHOPPING'
           },
@@ -92,75 +107,75 @@ const messages = {
             total: 'Total',
             shippingtitle: 'Shipping',
             shippingtaxes:
-              'Taxes and shipping fee will be calculated at checkout',
-            checkout: 'check out',
+              'Taxes and shipping fees will be calculated at checkout',
+            checkout: 'checkout',
             viewcart: 'view cart'
           }
         },
         profile: {
           login: {
             header: 'CUSTOMER LOGIN:',
-            eInput: 'Email Address',
-            evalid: 'email must be correct',
+            eInput: 'Email address',
+            evalid: 'Email must be valid',
             pInput: 'Password',
-            pvalid: 'password must not be empty or less than 8 char',
-            loginInput: 'LOGIN',
-            forgotP: 'Forgot your password?',
-            createBtn: 'CREATE AN ACCOUNT'
+            pvalid: 'Password cannot be empty or less than 8 characters',
+            loginInput: 'LOG IN',
+            forgotP: 'Forgot password?',
+            createBtn: 'CREATE ACCOUNT'
           },
           logout: {
             myacc: 'MY ACCOUNT',
             logoutBtn: 'LOG OUT'
           }
         },
-        mywishlist: 'MY WISH LISTS',
+        mywishlist: 'MY WISHLIST',
         lang: 'Language',
         placeholders: {
-          email: 'Email Address',
+          email: 'Email address',
           pass: 'Password'
         }
       },
       footer: {
         disc: {
           disc1:
-            'Stabraq Trendsetters is an all-Egyptian clothes brand. Driven by self-expression, we strive to reflect our beliefs through high quality, multi-featured products and effective and inspiring movements.',
-          dics2: 'Address: 1 Mostafa El-Nahaas, Nasr City',
-          dics3: 'Call us at: 01123399345',
-          dics4: 'Email: Email'
+            'HiepMobile is a store specializing in high-end mobile phones in Da Nang. Committed to providing customers with quality phones, attentive customer service, and the latest technology products, HiepMobile is always the top choice for tech enthusiasts.',
+          dics2: 'Address: District 3, Da Nang',
+          dics3: 'Call us at: 0901234567',
+          dics4: 'Email: hiepmobile@gmail.com'
         },
         shop: 'SHOP',
         info: 'INFORMATION',
-        info1: 'About Us',
+        info1: 'About HiepMobile',
         info2: 'Contact Us',
-        info3: 'Terms Of Service',
-        info4: 'Refund Policy',
+        info3: 'Terms of Service',
+        info4: 'Warranty Policy',
         payment: 'PAYMENT METHODS',
-        rights: '2021 Stabraq TS Management Co. All Rights Reserved'
+        rights: '2025 HiepMobile. All rights reserved'
       }
     },
     homePage: {
       lookingfor: {
-        title: 'I’m looking for..',
-        tshirts: 'T-SHIRTS',
-        pants: 'PANTS',
-        women: 'WOMEN',
-        kids: 'KIDS',
-        bags: 'BAGS',
-        accessories: 'ACCESSORIES'
+        title: 'I am looking for...',
+        tshirts: 'PHONES',
+        pants: 'LAPTOPS',
+        women: 'WATCHES',
+        kids: 'PHONE ACCESSORIES',
+        bags: 'LAPTOP ACCESSORIES',
+        accessories: 'WATCH ACCESSORIES'
       },
       newitems: {
-        head: 'New items that you can’t miss out on',
-        p: 'GRAPHICS COLLECTION'
+        head: 'New products you cannot miss',
+        p: 'PHONE, LAPTOP AND WATCH COLLECTION'
       },
       trending: {
         head: 'Trending',
-        sec1: 'T-SHIRTS',
-        sec2: 'PANTS',
-        sec3: 'ACCESSORIES'
+        sec1: 'PHONES',
+        sec2: 'LAPTOPS',
+        sec3: 'WATCHES'
       },
       furturetrend: {
-        head: 'Furture Trendsetters',
-        p: 'SHOP ALL'
+        head: 'Future Trendsetters',
+        p: 'BUY ALL'
       }
     },
     collectionPage: {
@@ -190,7 +205,7 @@ const messages = {
         total: 'total',
         shippingpol: 'Shipping policy',
         shippingp:
-          'Stabraq is not responsible for return shipping costs. Every shipping has to be paid by the customer, even if the item had free shipping in the first place, the customer has to pay for the shipping in return.',
+          'HiepMobile is not responsible for return shipping costs. Every shipping has to be paid by the customer, even if the item had free shipping in the first place, the customer has to pay for the shipping in return.',
         yconsent: 'Your Consent',
         consentp:
           'By using our website, registering an account, or making a purchase, you hereby consent to our Return & Refund Policy and agree to its terms.',
@@ -288,28 +303,28 @@ const messages = {
     cardInfoPage: {
       colors: 'Colors:',
       size: 'Size:',
-      addtcard: 'Add to cart',
-      buytnow: 'buy it now',
-      pickupp1: 'PICKUP AVAILABLE AT',
+      addtcard: 'Add to Cart',
+      buytnow: 'Buy Now',
+      pickupp1: 'PICK UP AT',
       pickupp2: 'ONLINE STORE',
-      pickupp3: 'Usually ready in 24 hours',
-      viewinfo: 'view store info',
+      pickupp3: 'Usually available within 24 hours',
+      viewinfo: 'view store information',
       onlines: 'online store',
-      pickupp: 'Pickup available, usually ready in 24 hours',
-      add1: '1 Mostafa El-Nahaas',
-      add2: '1st Floor',
+      pickupp: 'Available for pickup, usually ready within 24 hours',
+      add1: '1 District 3',
+      add2: 'Floor 1',
       add3: 'C',
-      add4: 'Nasr City',
+      add4: 'Da Nang City',
       add5: '4441525',
-      add6: 'Egypt',
+      add6: 'Vietnam',
       add7: '+20222737773',
-      sizechart: 'Size Chart',
-      chest: 'chest',
+      sizechart: 'Phone Size Chart',
+      chest: 'Screen Size',
       chestp:
-        'To measure the chest: First, put the product on a flat surface, then measure between the two ends below armhole.',
-      length: 'length',
+        'To measure the screen size: Measure from the top left corner to the bottom right corner of the phone screen.',
+      length: 'Phone Length',
       lengthp:
-        'To measure the length of the product: First, put the product on a flat surface, then measure from the highest point of the shoulder down to the products bottom hem.',
+        'To measure the phone length: Place the phone on a flat surface, then measure from the highest point to the lowest point of the phone.',
       related: 'Related Products'
     },
     accountRegister: {
@@ -360,39 +375,39 @@ const messages = {
       aboutus: {
         head: 'ABOUT US',
         text1:
-          'Stabraq Trendsetters is the number one detail oriented all-Egyptian clothes brand.',
+          'Hiep Mobile is a reputable phone store in Da Nang, specializing in offering genuine phones from top brands.',
         text2:
-          'Driven by self-expression, we strive to reflect our beliefs through high quality, multi-featured products and effective and inspiring movements.',
+          'We are committed to providing high-quality products, dedicated service, and reasonable prices. At Hiep Mobile, you will find the latest phones, accessories, and professional repair services.',
         text3:
-          'Check out this video to get an idea of who we are, and how we work.'
+          'Watch this video to learn more about us and how we serve our customers.'
       },
       contactus: {
-        head: 'DROP US A LINE',
+        head: 'CONTACT US',
         haveaq:
-          'Have a question or comment? Use the form below to send us a message or contact us by mail at:',
+          'Do you have any questions or suggestions? Please use the form below to send a message or contact us via email:',
         yname: 'Your Name',
-        yphone: 'Your Phone',
+        yphone: 'Your Phone Number',
         yemail: 'Your Email',
         ycomment: 'Your Comment',
-        submit: 'submit contact',
+        submit: 'Send Contact',
         storeinfo: 'STORE INFORMATION',
-        storeinfop1: 'We would love to hear from you - please use the',
-        storeinfop2: 'form to send us your message or ideas. Or',
-        storeinfop3: 'simply pop in for a cup of fresh tea and a',
+        storeinfop1: 'We always want to hear from you - please use',
+        storeinfop2: 'the form to send a message or suggestion.',
+        storeinfop3: 'Or visit us for tea and cookies:',
         storeinfop4: 'cookie:',
-        storeinfop5: 'Address: 1 Mostafa El-Nahaas, Nasr City,',
-        storeinfop6: 'Cairo',
+        storeinfop5: 'Address: 1 abc, Da Nang City,',
+        storeinfop6: 'XYZ',
         storeinfop7: 'Email: EMAIL',
-        storeinfop8: 'Mobile: 002-01123399345',
+        storeinfop8: 'Phone: 002-01123399345',
         storeinfop9: 'Opening Hours:',
-        storeinfop10: 'Sunday to Thursday: 12pm - 12am',
-        storeinfop11: 'Fridays: 1pm - 12am'
+        storeinfop10: 'Sunday to Thursday: 12 PM - 12 AM',
+        storeinfop11: 'Friday: 1 PM - 12 AM'
       },
       termsofserv: {
-        head: 'Terms of service'
+        head: 'Terms of Service'
       },
       refundpol: {
-        head: 'Refund policy'
+        head: 'Refund Policy'
       }
     },
     ui: {
@@ -451,79 +466,94 @@ const messages = {
   vi: {
     global: {
       header: {
-        logo: 'stabraq',
+        logo: 'HiepMobile',
         nav: {
-          men: 'Nam',
-          women: 'Nữ',
-          kids: 'Trẻ em',
+          men: 'Điện thoại, Tablet',
+          women: 'Laptop',
+          kids: 'Đồng hồ, Camera',
           accessories: 'Phụ kiện'
         },
         navList: {
           men: {
-            allmen: 'TẤT CẢ NAM',
-            alltops: 'Tất cả áo',
-            top: 'ÁO',
-            top1: 'ÁO THUN',
-            top2: 'Họa tiết',
-            top3: 'Áo đồ họa',
-            top4: 'Polo',
-            top5: 'Áo sơ mi',
-            top6: 'Áo dài tay',
-            top7: 'Áo hoodie',
-            top8: 'Áo khoác kéo',
-            top9: 'Áo pullover',
-            top10: 'Áo khoác & Áo mưa',
-            allbott: 'Tất cả quần',
-            bottom: 'QUẦN',
-            bottom1: 'Jeans',
-            bottom2: 'Jogger',
-            bottom3: 'Quần thể thao',
-            bottom4: 'Quần đùi',
-            alljil: 'Tất cả jilbab',
-            jilbab: 'JILBAB',
-            jilbab1: 'Jilbab',
+            allmen: 'TẤT CẢ ĐIỆN THOẠI',
+            alltops: 'Tất cả điện thoại',
+            top: 'iPhone',
+            top1: 'Xiaomi',
+            top2: 'Samsung',
+            top3: 'Oppo',
+            top4: 'Realme',
+            top5: 'Vivo',
+            top6: 'Nokia',
+            top7: 'Motorola',
+            top8: 'Asus',
+            top9: 'Tecno',
+            top10: 'Infinix',
+
+            allbott: 'Tất cả máy tính bảng',
+            bottom: 'MÁY TÍNH BẢNG',
+            bottom1: 'iPad',
+            bottom2: 'Samsung Tab',
+            bottom3: 'Xiaomi Pad',
+            bottom4: 'Lenovo Tab',
+
+            alljil: 'Tất cả phụ kiện điện thoại & tablet',
+            jilbab: 'PHỤ KIỆN',
+            jilbab1: 'Ốp lưng',
+            jilbab2: 'Cáp sạc',
+            jilbab3: 'Tai nghe',
+            jilbab4: 'Giá đỡ',
+            jilbab5: 'Thẻ nhớ',
+            jilbab6: 'Pin dự phòng',
+            jilbab7: 'Dán màn hình',
+            jilbab8: 'Bút cảm ứng',
+
             allfeat: 'Tất cả nổi bật',
             featured: 'NỔI BẬT',
-            shopallmen: 'MUA TẤT CẢ NAM',
-            allaccess: 'Tất cả phụ kiện',
-            accessories: 'PHỤ KIỆN',
-            accessories1: 'Tất tất',
-            accessories2: 'Ví',
-            accessories3: 'Sổ tay',
-            accessories4: 'Thẻ quà tặng',
+            shopallmen: 'MUA TẤT CẢ ĐIỆN THOẠI & TABLET',
+            allaccess: 'Tất cả phụ kiện khác',
+            accessories: 'PHỤ KIỆN KHÁC',
+            accessories1: 'Thiết bị theo dõi',
+            accessories2: 'Loa Bluetooth',
+            accessories3: 'Củ sạc',
+            accessories4: 'Đèn LED livestream',
             newarr: 'Sản phẩm mới'
           },
           women: {
-            allwomen: 'Tất cả nữ',
-            alltops: 'Tất cả áo',
-            top: 'ÁO',
-            top1: 'Cơ bản',
-            top2: 'Họa tiết',
-            top3: 'Áo kéo',
-            top4: 'Áo pullover',
-            top5: 'Áo nỉ',
-            bottom: 'QUẦN',
-            allbottoms: 'Tất cả quần',
-            bottom1: 'Váy',
-            dress: 'VÁY & JUMPSUIT',
-            alldress: 'Tất cả váy & jumpsuit',
-            dress1: 'Váy',
-            accessories: 'PHỤ KIỆN',
-            allaccesswomen: 'Tất cả phụ kiện nữ',
-            accessories1: 'Tất tất',
-            accessories2: 'Khăn quàng',
-            accessories3: 'Sổ tay',
-            accessories4: 'Thẻ quà tặng',
+            allwomen: 'TẤT CẢ LAPTOP',
+            alltops: 'Tất cả laptop',
+            top: 'LAPTOP',
+            top1: 'MacBook',
+            top2: 'Dell',
+            top3: 'HP',
+            top4: 'Asus',
+            top5: 'Acer',
+
+            bottom: 'PHÂN KHÚC',
+            allbottoms: 'Tất cả phân khúc',
+            bottom1: 'Văn phòng – học tập',
+            dress: 'CHUYÊN DỤNG',
+            alldress: 'Tất cả dòng chuyên dụng',
+            dress1: 'Gaming',
+            dress2: 'Đồ họa – Kỹ thuật',
+            dress3: 'Doanh nhân – Cao cấp',
+
+            accessories: 'PHỤ KIỆN LAPTOP',
+            allaccesswomen: 'Tất cả phụ kiện laptop',
+            accessories1: 'Chuột',
+            accessories2: 'Bàn phím',
+            accessories3: 'Túi chống sốc',
+            accessories4: 'Balo laptop',
+
             featured: 'NỔI BẬT',
             allfeatured: 'Tất cả nổi bật',
             featured1: 'Sản phẩm mới',
-            shopallwomen: 'MUA TẤT CẢ NỮ'
+            shopallwomen: 'MUA TẤT CẢ LAPTOP'
           },
           kids: {
-            allkids: 'Tất cả trẻ em',
-            top1: 'Quần',
-            top2: 'Họa tiết',
-            top3: 'Áo kéo'
+            allkids: 'TẤT CẢ ĐỒNG HỒ',
+            top1: 'Đồng hồ nam',
+            top2: 'Đồng hồ nữ',
+            top3: 'Đồng hồ thể thao'
           }
         },
         cart: {
@@ -569,40 +599,40 @@ const messages = {
       footer: {
         disc: {
           disc1:
-            'Stabraq Trendsetters là thương hiệu thời trang toàn Ai Cập. Với tôn chỉ tự thể hiện, chúng tôi phấn đấu phản ánh những giá trị của mình qua các sản phẩm chất lượng cao, tính năng đa dạng và những phong trào hiệu quả, truyền cảm hứng.',
-          dics2: 'Địa chỉ: 1 Mostafa El-Nahaas, Nasr City',
-          dics3: 'Gọi chúng tôi qua: 01123399345',
-          dics4: 'Email: Email'
+            'HiepMobile là cửa hàng chuyên cung cấp các sản phẩm điện thoại di động cao cấp tại Đà Nẵng. Với cam kết mang đến cho khách hàng những chiếc điện thoại chất lượng, dịch vụ chăm sóc khách hàng tận tình và những sản phẩm công nghệ mới nhất, HiepMobile luôn là sự lựa chọn hàng đầu cho những tín đồ yêu công nghệ.',
+          dics2: 'Địa chỉ: Quận 3, Đà Nẵng',
+          dics3: 'Gọi chúng tôi qua: 0901234567',
+          dics4: 'Email: hiepmobile@gmail.com'
         },
         shop: 'MUA SẮM',
         info: 'THÔNG TIN',
-        info1: 'Về chúng tôi',
+        info1: 'Về HiepMobile',
         info2: 'Liên hệ với chúng tôi',
         info3: 'Điều khoản dịch vụ',
-        info4: 'Chính sách hoàn tiền',
+        info4: 'Chính sách bảo hành',
         payment: 'PHƯƠNG THỨC THANH TOÁN',
-        rights: '2021 Stabraq TS Management Co. Bản quyền đã được bảo lưu'
+        rights: '2025 HiepMobile. Bản quyền đã được bảo lưu'
       }
     },
     homePage: {
       lookingfor: {
         title: 'Tôi đang tìm...',
-        tshirts: 'ÁO THUN',
-        pants: 'QUẦN',
-        women: 'PHỤ NỮ',
-        kids: 'TRẺ EM',
-        bags: 'TÚI XÁCH',
-        accessories: 'PHỤ KIỆN'
+        tshirts: 'ĐIỆN THOẠI',
+        pants: 'LAPTOP',
+        women: 'ĐỒNG HỒ',
+        kids: 'PHỤ KIỆN ĐIỆN THOẠI',
+        bags: 'PHỤ KIỆN LAPTOP',
+        accessories: 'PHỤ KIỆN ĐỒNG HỒ'
       },
       newitems: {
         head: 'Sản phẩm mới bạn không thể bỏ qua',
-        p: 'BỘ SƯU TẬP ĐỒ HỌA'
+        p: 'BỘ SƯU TẬP ĐIỆN THOẠI, LAPTOP VÀ ĐỒNG HỒ'
       },
       trending: {
         head: 'Xu hướng',
-        sec1: 'ÁO THUN',
-        sec2: 'QUẦN',
-        sec3: 'PHỤ KIỆN'
+        sec1: 'ĐIỆN THOẠI',
+        sec2: 'LAPTOP',
+        sec3: 'ĐỒNG HỒ'
       },
       furturetrend: {
         head: 'Những người dẫn đầu xu hướng tương lai',
@@ -636,7 +666,7 @@ const messages = {
         total: 'Tổng cộng',
         shippingpol: 'Chính sách vận chuyển',
         shippingp:
-          'Stabraq không chịu trách nhiệm chi phí vận chuyển trả lại. Mọi chi phí vận chuyển phải được khách hàng thanh toán, ngay cả khi sản phẩm ban đầu có miễn phí vận chuyển, khách hàng vẫn phải trả phí vận chuyển khi trả hàng.',
+          'HiepMobile không chịu trách nhiệm chi phí vận chuyển trả lại. Mọi chi phí vận chuyển phải được khách hàng thanh toán, ngay cả khi sản phẩm ban đầu có miễn phí vận chuyển, khách hàng vẫn phải trả phí vận chuyển khi trả hàng.',
         yconsent: 'Sự đồng ý của bạn',
         consentp:
           'Bằng cách sử dụng website của chúng tôi, đăng ký tài khoản hoặc mua hàng, bạn đồng ý với Chính sách Hoàn trả & Hoàn tiền của chúng tôi và các điều khoản của nó.',
@@ -712,6 +742,184 @@ const messages = {
         postalc: 'Mã bưu điện',
         phone: 'Điện thoại',
         phoneoptional: 'Điện thoại (tùy chọn)'
+      }
+    },
+    cartPage: {
+      head: 'Giỏ hàng của tôi',
+      emptycart: 'Giỏ hàng của bạn hiện đang trống.',
+      continuebrows: 'Tiếp tục mua sắm',
+      here: 'tại đây',
+      prod: 'sản phẩm',
+      info: 'thông tin',
+      price: 'Giá:',
+      quan: 'Số lượng:',
+      total: 'Tổng:',
+      ordersum: 'tóm tắt đơn hàng',
+      addcom: 'Ghi chú thêm',
+      proceed: 'tiến hành thanh toán',
+      contshopping: 'tiếp tục mua sắm',
+      related: 'Sản phẩm liên quan',
+      commentplaceh: 'Ghi chú đặc biệt cho người bán'
+    },
+    cardInfoPage: {
+      colors: 'Màu sắc:',
+      size: 'Kích thước:',
+      addtcard: 'Thêm vào giỏ hàng',
+      buytnow: 'mua ngay',
+      pickupp1: 'CÓ THỂ NHẬN HÀNG TẠI',
+      pickupp2: 'CỬA HÀNG TRỰC TUYẾN',
+      pickupp3: 'Thường sẵn sàng trong vòng 24 giờ',
+      viewinfo: 'xem thông tin cửa hàng',
+      onlines: 'cửa hàng trực tuyến',
+      pickupp: 'Có thể nhận hàng, thường sẵn sàng trong 24 giờ',
+      add1: '1 Quận 3',
+      add2: 'Tầng 1',
+      add3: 'C',
+      add4: 'Đà Nẵng City',
+      add5: '4441525',
+      add6: 'Việt Nam',
+      add7: '+20222737773',
+      sizechart: 'Bảng kích thước điện thoại',
+      chest: 'Kích thước màn hình',
+      chestp:
+        'Để đo kích thước màn hình: Đo từ góc trên cùng bên trái đến góc dưới cùng bên phải của màn hình điện thoại.',
+      length: 'Kích thước điện thoại',
+      lengthp:
+        'Để đo chiều dài của điện thoại: Đặt điện thoại trên bề mặt phẳng, sau đó đo từ điểm cao nhất đến điểm thấp nhất của điện thoại.',
+      related: 'Sản phẩm liên quan'
+    },
+    accountRegister: {
+      head: 'TÀI KHOẢN',
+      newcus: 'KHÁCH HÀNG MỚI',
+      signupp:
+        'Đăng ký để thanh toán nhanh hơn, theo dõi đơn hàng và nhiều hơn nữa.',
+      fname: 'Tên',
+      fnameerror: 'Tên không được để trống',
+      lname: 'Họ',
+      lnameerror: 'Họ không được để trống',
+      emailadd: 'Địa chỉ Email của bạn',
+      enailadderror: 'Email không hợp lệ',
+      pass: 'Mật khẩu của bạn',
+      passerror: 'Mật khẩu không được để trống hoặc ít hơn 8 ký tự',
+      createacc: 'tạo tài khoản',
+      or: 'HOẶC',
+      returner: 'KHÁCH HÀNG CŨ',
+      signinp: 'Nếu bạn đã có tài khoản, hãy nhập email và mật khẩu.',
+      uemail: 'Địa chỉ Email',
+      uemailerror: 'Email không hợp lệ',
+      upass: 'Mật khẩu',
+      upasserror: 'Mật khẩu không được để trống hoặc ít hơn 8 ký tự',
+      login: 'đăng nhập',
+      placeholders: {
+        fname: 'Tên',
+        lname: 'Họ',
+        yemail: 'Địa chỉ Email của bạn',
+        ypass: 'Mật khẩu của bạn',
+        emailadd: 'Địa chỉ Email',
+        passadd: 'Mật khẩu'
+      }
+    },
+    accountPage: {
+      head: 'TÀI KHOẢN CỦA TÔI',
+      orderhis: 'LỊCH SỬ ĐƠN HÀNG',
+      order: 'đơn hàng',
+      date: 'ngày',
+      paymentstat: 'trạng thái thanh toán',
+      fulfillment: 'trạng thái thực hiện',
+      total: 'tổng',
+      emptyhistory: 'Bạn chưa có đơn hàng nào.',
+      contbrowsing: 'Tiếp tục mua sắm',
+      here: 'tại đây'
+    },
+    information: {
+      aboutus: {
+        head: 'VỀ CHÚNG TÔI',
+        text1:
+          'Hiep Mobile là cửa hàng bán điện thoại uy tín tại Đà Nẵng, chuyên cung cấp các dòng điện thoại chính hãng từ các thương hiệu hàng đầu.',
+        text2:
+          'Chúng tôi cam kết mang đến cho khách hàng những sản phẩm chất lượng cao, dịch vụ tận tâm và giá cả hợp lý. Tại Hiep Mobile, bạn sẽ tìm thấy các dòng điện thoại mới nhất, phụ kiện đi kèm và các dịch vụ sửa chữa chuyên nghiệp.',
+        text3:
+          'Xem video này để hiểu thêm về chúng tôi và cách chúng tôi phục vụ khách hàng.'
+      },
+      contactus: {
+        head: 'LIÊN HỆ VỚI CHÚNG TÔI',
+        haveaq:
+          'Bạn có câu hỏi hay góp ý? Vui lòng sử dụng mẫu dưới đây để gửi tin nhắn hoặc liên hệ với chúng tôi qua thư:',
+        yname: 'Tên của bạn',
+        yphone: 'Số điện thoại',
+        yemail: 'Email của bạn',
+        ycomment: 'Bình luận của bạn',
+        submit: 'gửi liên hệ',
+        storeinfo: 'THÔNG TIN CỬA HÀNG',
+        storeinfop1: 'Chúng tôi luôn muốn lắng nghe bạn - vui lòng sử dụng',
+        storeinfop2: 'mẫu để gửi tin nhắn hoặc góp ý.',
+        storeinfop3: 'Hoặc ghé thăm để thưởng thức trà và bánh:',
+        storeinfop4: 'cookie:',
+        storeinfop5: 'Địa chỉ: 1 abc, Đà Nẵng City,',
+        storeinfop6: 'XYZ',
+        storeinfop7: 'Email: EMAIL',
+        storeinfop8: 'Điện thoại: 002-01123399345',
+        storeinfop9: 'Giờ mở cửa:',
+        storeinfop10: 'Chủ nhật đến thứ Năm: 12h trưa - 12h đêm',
+        storeinfop11: 'Thứ Sáu: 1h chiều - 12h đêm'
+      },
+      termsofserv: {
+        head: 'Điều khoản dịch vụ'
+      },
+      refundpol: {
+        head: 'Chính sách hoàn tiền'
+      }
+    },
+    ui: {
+      basesidebar: {
+        close: 'ĐÓNG'
+      },
+      editex: {
+        prodoptions: 'tùy chọn sản phẩm',
+        editquan: 'Số lượng:',
+        editcolor: 'Màu sắc:',
+        editsize: 'Kích thước:',
+        addtocart: 'thêm vào giỏ hàng'
+      },
+      popup: {
+        added: 'đã được thêm vào giỏ hàng của bạn.',
+        continueshopping: 'tiếp tục mua sắm',
+        gotocart: 'đến giỏ hàng'
+      },
+      thanky: {
+        confirmed: 'Đơn hàng của bạn đã được xác nhận',
+        confp: 'Bạn sẽ nhận được email khi đơn hàng sẵn sàng để nhận.',
+        btn: 'tiếp tục mua sắm'
+      }
+    },
+    errorAndNote: {
+      collectionPage: {
+        yoursearch1: 'KẾT QUẢ TÌM KIẾM CHO ',
+        yoursearch2: ' ĐÃ HIỂN THỊ NHƯ SAU:',
+        nodata1: 'Xin lỗi, bạn chưa thêm sản phẩm nào vào danh sách yêu thích',
+        nodata2: 'Xin lỗi, không có sản phẩm nào trong bộ sưu tập này',
+        nodata3: 'Xin lỗi, không có sản phẩm nào phù hợp với tìm kiếm',
+        dataerror: 'đã xảy ra lỗi'
+      },
+      accountPage: {
+        loadorder: 'tải đơn hàng thất bại'
+      },
+      header: {
+        loadSpinLangError: 'đổi ngôn ngữ gặp lỗi',
+        logoutError: 'đăng xuất gặp lỗi'
+      },
+      store: {
+        mainStore: {
+          responsefiled: 'không thể tải sản phẩm'
+        },
+        authModule: {
+          signupfiled: 'Đã xảy ra lỗi, vui lòng thử lại sau',
+          signinfiled: 'Email hoặc mật khẩu không đúng, vui lòng thử lại'
+        },
+        ordersModule: {
+          setorderfiled: 'gửi đơn hàng thất bại',
+          fetchordersfiled: 'lấy đơn hàng thất bại'
+        }
       }
     }
   }

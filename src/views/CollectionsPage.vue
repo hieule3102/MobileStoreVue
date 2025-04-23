@@ -1,48 +1,77 @@
 <template>
-<div class="container">
-  <div class="collection">
-    <div class="head">
-      <h3>{{ headtitle }}</h3>
-      <div class="controls flex-lg-row-reverse">
-        <div class="right">
-          <div class="sorting d-flex">
-            <span class="spantit d-none d-md-flex">{{ $t('collectionPage.sort.head') }}</span>
-            <select v-model="sorting" class="form-select" aria-label="Default select example">
-              <option selected value="1">{{ $t('collectionPage.sort.sort1') }}</option>
-              <option value="2">{{ $t('collectionPage.sort.sort2') }}</option>
-              <option value="3">{{ $t('collectionPage.sort.sort3') }}</option>
-              <option value="4">{{ $t('collectionPage.sort.sort4') }}</option>
-              <option value="5">{{ $t('collectionPage.sort.sort5') }}</option>
-              <option value="6">{{ $t('collectionPage.sort.sort6') }}</option>
-              <option value="7">{{ $t('collectionPage.sort.sort7') }}</option>
-              <option value="8">{{ $t('collectionPage.sort.sort8') }}</option>
-            </select>
+  <div class="container">
+    <div class="collection">
+      <div class="head">
+        <h3>{{ headtitle }}</h3>
+        <div class="controls flex-lg-row-reverse">
+          <div class="right">
+            <div class="sorting d-flex">
+              <span class="spantit d-none d-md-flex">{{
+                $t("collectionPage.sort.head")
+              }}</span>
+              <select
+                v-model="sorting"
+                class="form-select"
+                aria-label="Default select example"
+              >
+                <option selected value="1">
+                  {{ $t("collectionPage.sort.sort1") }}
+                </option>
+                <option value="2">{{ $t("collectionPage.sort.sort2") }}</option>
+                <option value="3">{{ $t("collectionPage.sort.sort3") }}</option>
+                <option value="4">{{ $t("collectionPage.sort.sort4") }}</option>
+                <option value="5">{{ $t("collectionPage.sort.sort5") }}</option>
+                <option value="6">{{ $t("collectionPage.sort.sort6") }}</option>
+                <option value="7">{{ $t("collectionPage.sort.sort7") }}</option>
+                <option value="8">{{ $t("collectionPage.sort.sort8") }}</option>
+              </select>
+            </div>
           </div>
-        </div>
-        <div class="left">
-          <span class="spantit d-none d-md-flex">{{ $t('collectionPage.viewas') }}</span>
-          <div class="bars  d-flex">
-            <div @click="activebar" data-bars='2' class="bar bar-2 active">
-            </div>
-            <div @click="activebar" data-bars='3' class="bar bar-3 d-none d-md-block">
-            </div>
-            <div @click="activebar" data-bars='4' class="bar bar-4 d-none d-lg-block">
-            </div>
-            <div @click="activebar" data-bars='5' class="bar bar-5 d-none d-xl-block">
+          <div class="left">
+            <span class="spantit d-none d-md-flex">{{
+              $t("collectionPage.viewas")
+            }}</span>
+            <div class="bars d-flex">
+              <div
+                @click="activebar"
+                data-bars="2"
+                class="bar bar-2 active"
+              ></div>
+              <div
+                @click="activebar"
+                data-bars="3"
+                class="bar bar-3 d-none d-md-block"
+              ></div>
+              <div
+                @click="activebar"
+                data-bars="4"
+                class="bar bar-4 d-none d-lg-block"
+              ></div>
+              <div
+                @click="activebar"
+                data-bars="5"
+                class="bar bar-5 d-none d-xl-block"
+              ></div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="products row">
-      <base-spinner class="basespinner" v-if="isLoading"></base-spinner>
-      <p v-if="nodata" class="nodata">{{ nodatap }}</p>
-      <div class="col-6" v-for="product in filterData" :key="product.id">
-          <base-card :id ='product.id' :name='product.product_name' :price='product.price' :img='product.main_image' :state='product.state' :discount='product.discount'></base-card>
+      <div class="products row">
+        <base-spinner class="basespinner" v-if="isLoading"></base-spinner>
+        <p v-if="nodata" class="nodata">{{ nodatap }}</p>
+        <div class="col-6" v-for="product in filterData" :key="product.id">
+          <base-card
+            :id="product.id"
+            :name="product.product_name"
+            :price="product.price"
+            :img="product.main_image"
+            :state="product.state"
+            :discount="product.discount"
+          ></base-card>
+        </div>
       </div>
     </div>
   </div>
-</div>
 </template>
 
 <script>
@@ -62,7 +91,11 @@ export default {
       if (this.$route.query.type === undefined) {
         return this.collectionsId
       } else {
-        return this.$i18n.t('errorAndNote.collectionPage.yoursearch1') + this.collectionsId + this.$i18n.t('errorAndNote.collectionPage.yoursearch2')
+        return (
+          this.$i18n.t('errorAndNote.collectionPage.yoursearch1') +
+          this.collectionsId +
+          this.$i18n.t('errorAndNote.collectionPage.yoursearch2')
+        )
       }
     },
     filterData () {
@@ -78,7 +111,9 @@ export default {
         })
       } else {
         products = data.filter((product) => {
-          return product.product_name.toLowerCase().includes(this.collectionsId.toLowerCase())
+          return product.product_name
+            .toLowerCase()
+            .includes(this.collectionsId.toLowerCase())
         })
       }
       if (this.sorting === '2') {
@@ -156,7 +191,9 @@ export default {
       try {
         await this.$store.dispatch('fetchData')
       } catch (error) {
-        this.error = error.message || this.$i18n.t('errorAndNote.collectionPage.dataerror')
+        this.error =
+          error.message ||
+          this.$i18n.t('errorAndNote.collectionPage.dataerror')
       }
       this.isLoading = false
     },
@@ -197,41 +234,41 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.collection{
+.collection {
   padding-top: 120px;
   margin-bottom: 10px;
-  .head{
-    h3{
+  .head {
+    h3 {
       text-transform: uppercase;
     }
-    .controls{
+    .controls {
       display: flex;
       justify-content: space-between;
       align-items: center;
       margin: 40px 0 30px;
       .left,
-      .right{
+      .right {
         display: flex;
         align-items: center;
         justify-content: center;
-        .sorting{
-          .form-select{
-            width: 155px;
+        .sorting {
+          .form-select {
+            width: 205px;
           }
         }
-        .form-select{
+        .form-select {
           border: 1px solid #aaa;
           border-radius: 0;
           color: #505050;
           width: 100px;
           font-size: 13px;
           padding: 8px 13px;
-          &:focus{
+          &:focus {
             box-shadow: none;
           }
         }
       }
-      .spantit{
+      .spantit {
         display: flex;
         align-items: center;
         margin-right: 15px;
@@ -239,7 +276,7 @@ export default {
         font-size: 13px;
         font-weight: 500;
       }
-      .bar{
+      .bar {
         position: relative;
         cursor: pointer;
         margin: 0 3px;
@@ -247,7 +284,7 @@ export default {
         min-width: 19px;
         height: 26px;
         transition-duration: 0.3s;
-        &::before{
+        &::before {
           position: absolute;
           content: "";
           top: 3px;
@@ -256,69 +293,71 @@ export default {
           width: 4px;
           background-color: #aaa;
         }
-        &.active{
-          &::before{
+        &.active {
+          &::before {
             background-color: black;
           }
         }
-        &.bar-2{
+        &.bar-2 {
           width: 19px;
-          &::before{
+          &::before {
             box-shadow: 7px 0 #aaa;
           }
-          &.active{
-            &::before{
+          &.active {
+            &::before {
               box-shadow: 7px 0 black;
             }
           }
         }
-        &.bar-3{
+        &.bar-3 {
           width: 26px;
-          &::before{
+          &::before {
             box-shadow: 7px 0 #aaa, 14px 0 #aaa;
           }
-          &.active{
-            &::before{
+          &.active {
+            &::before {
               box-shadow: 7px 0 black, 14px 0 black;
             }
           }
         }
-        &.bar-4{
+        &.bar-4 {
           width: 33px;
-          &::before{
+          &::before {
             box-shadow: 7px 0 0 #aaa, 14px 0 0 #aaa, 21px 0 0 #aaa;
           }
-          &.active{
-            &::before{
+          &.active {
+            &::before {
               box-shadow: 7px 0 black, 14px 0 black, 21px 0 0 black;
             }
           }
         }
-        &.bar-5{
+        &.bar-5 {
           width: 40px;
-          &::before{
-          box-shadow: 7px 0 0 #aaa, 14px 0 0 #aaa, 21px 0 0 #aaa, 28px 0 0 #aaa;
+          &::before {
+            box-shadow: 7px 0 0 #aaa, 14px 0 0 #aaa, 21px 0 0 #aaa,
+              28px 0 0 #aaa;
           }
-          &.active{
-            &::before{
-              box-shadow: 7px 0 black, 14px 0 black, 21px 0 0 black, 28px 0 0 black;
+          &.active {
+            &::before {
+              box-shadow: 7px 0 black, 14px 0 black, 21px 0 0 black,
+                28px 0 0 black;
             }
           }
         }
-        }
       }
     }
-  .products{
+  }
+  .products {
     // position: relative;
     display: flex;
     align-items: center;
     justify-content: start;
     flex-wrap: wrap;
     // z-index: -1;
-    .col-5{
+    .col-5 {
       flex: 0 0 calc(20%);
     }
-    .nodata{
+    .nodata {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -328,7 +367,7 @@ export default {
       font-weight: 500;
     }
   }
-  .basespinner{
+  .basespinner {
     margin: 150px 0;
   }
 }

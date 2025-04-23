@@ -89,8 +89,8 @@ const messages = {
           },
           kids: {
             allkids: 'ALL WATCHES',
-            top1: "Men's Watches",
-            top2: "Women's Watches",
+            top1: 'Men\'s Watches',
+            top2: 'Women\'s Watches',
             top3: 'Sports Watches'
           }
         },
@@ -141,7 +141,7 @@ const messages = {
             'HiepMobile is a store specializing in high-end mobile phones in Da Nang. Committed to providing customers with quality phones, attentive customer service, and the latest technology products, HiepMobile is always the top choice for tech enthusiasts.',
           dics2: 'Address: District 3, Da Nang',
           dics3: 'Call us at: 0901234567',
-          dics4: 'Email: hiepmobile@gmail.com'
+          dics4: 'Email: Email'
         },
         shop: 'SHOP',
         info: 'INFORMATION',
@@ -602,7 +602,7 @@ const messages = {
             'HiepMobile là cửa hàng chuyên cung cấp các sản phẩm điện thoại di động cao cấp tại Đà Nẵng. Với cam kết mang đến cho khách hàng những chiếc điện thoại chất lượng, dịch vụ chăm sóc khách hàng tận tình và những sản phẩm công nghệ mới nhất, HiepMobile luôn là sự lựa chọn hàng đầu cho những tín đồ yêu công nghệ.',
           dics2: 'Địa chỉ: Quận 3, Đà Nẵng',
           dics3: 'Gọi chúng tôi qua: 0901234567',
-          dics4: 'Email: hiepmobile@gmail.com'
+          dics4: 'Email: Email'
         },
         shop: 'MUA SẮM',
         info: 'THÔNG TIN',

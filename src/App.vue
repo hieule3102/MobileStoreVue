@@ -65,8 +65,8 @@ export default {
     // lang-start
 
     const linkLang = document.querySelector('.main-font')
-
-    if (JSON.parse(window.localStorage.getItem('lang')) === 'vi') {
+    const savedLang = JSON.parse(window.localStorage.getItem('lang')) || 'vi'
+    if (savedLang === 'vi') {
       this.$i18n.locale = 'vi'
       this.$store.dispatch('setLang', 'vi')
       this.$store.dispatch('setCurrentLang', 'VietNam')
